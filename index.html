@@ -31,6 +31,10 @@
             height: 50px;
             width: 160px; 
             margin: 10px;
+            cursor: pointer;
+        }
+        .non-active {
+            background-color: gray; 
         }
         .split {
             height: 100%;
@@ -43,9 +47,17 @@
         .right {
             right: 0;
         }
+        .title {
+            width: fit-content;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
+    <p class="title">NTA-FEb-hw</p>
     <article>
         <div class="split left">
             <form class="form" id="pages">
@@ -53,12 +65,7 @@
             <div class="row">
                 <input type="button" value="Lesson 1" onClick='location.href="/NTA-FEb-hw/fe-core-01/index.html"'>
                 <input type="button" value="Lesson 2" onClick='location.href="/NTA-FEb-hw/fe-core-02/index.html"'>
-                <input type="button" value="Lesson 3" onClick='location.href="/NTA-FEb-hw/fe-core-03/index.html"'>
-            </div>
-            <div class="row">
-                <input type="button" value="Lesson 4" onClick='location.href="/NTA-FEb-hw/fe-core-04/index.html"'>
-                <input type="button" value="Lesson 5" onClick='location.href="/NTA-FEb-hw/fe-core-05/index.html"'>
-                <input type="button" value="Lesson 6" onClick='location.href="/NTA-FEb-hw/fe-core-06/index.html"'>
+                <input type="button" value="Lesson 3" onClick='location.href="#"' class="non-active">
             </div>
            </form>
         </div>
@@ -68,12 +75,7 @@
                 <div class="row">
                     <input type="button" value="Lesson 1" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-01"'>
                     <input type="button" value="Lesson 2" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-01"'>
-                    <input type="button" value="Lesson 3" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-03"'>
-                </div>
-                <div class="row">
-                    <input type="button" value="Lesson 4" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-04"'>
-                    <input type="button" value="Lesson 5" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-05"'>
-                    <input type="button" value="Lesson 6" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-06"'>
+                    <input type="button" value="Lesson 3" onClick='location.href="#"' class="non-active">
                 </div>
                </form>    
         </div>
