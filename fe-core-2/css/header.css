@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+.header {
+    padding: 15px 10px;
+}
+
+.header-container {
+    width: 70%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.header-container-logo {
+    float: left;
+}
+
+.header-container-user {
+    float: right;
+}
+
+.header p {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header span {
+    font-size: 14px;
+    color: lightgray;
+    text-transform: lowercase;
+    font-style: italic;
+    margin-left: -10px;
+}
+
+.header .login {
+    background: transparent;
+    border: transparent;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.header .contact {
+    background: red;
+    color: white;
+    border-color: transparent;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+}

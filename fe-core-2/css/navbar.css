@@ -1,0 +1,44 @@
+.navbar {
+    width: 100%;
+    background-color: rgb(52, 52, 52);
+}
+
+.navbar-container {
+    width: 70%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.navbar-container-sections {
+    float: left;
+}
+
+.navbar-container-sections .sections {
+    padding: 0;
+    clear: both;
+    display: table;
+}
+
+.navbar-container-sections .sections li {
+    list-style-type: none;
+    float: left;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    padding: 25px 15px;
+}
+
+.navbar-container-sections .sections .active {
+    background-color: red;
+}
+
+.navbar-container-search {
+    margin: 15px 30px;
+    float: right;
+}
+
+.navbar-container-search .search {
+    width: 230px;
+    height: 30px;
+}
