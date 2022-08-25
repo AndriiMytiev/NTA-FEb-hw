@@ -1,9 +1,9 @@
-.information-container {
+.content-container {
     width: 70%;
     margin: auto;
 }
 
-.information-container .title {
+.content-container .title {
     width: 70%;
     font-size: 35px;
     font-weight: bold;
@@ -11,25 +11,25 @@
     margin: 40px 0px;
 }
 
-.information-container .maintext {
+.content-container .maintext {
     line-height: 1.7;
     width: 70%;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.information-container .features-title {
+.content-container .features-title {
     font-size: 20px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 30px;
 }
 
-.information-container .features-list {
+.content-container .features-list {
     padding: 10px 20px;
 }
 
-.information-container .features-list li {
+.content-container .features-list li {
     font-size: 16px;
     line-height: 1.7;
     font-family: Arial, Helvetica, sans-serif;
