@@ -10,17 +10,17 @@
     display: table;
 }
 
-.navbar-container-sections {
+.navbar-container-menu {
     float: left;
 }
 
-.navbar-container-sections .sections {
+.navbar-container-menu .menu {
     padding: 0;
     clear: both;
     display: table;
 }
 
-.navbar-container-sections .sections li {
+.navbar-container-menu .menu li {
     list-style-type: none;
     float: left;
     text-transform: uppercase;
@@ -29,7 +29,7 @@
     padding: 25px 15px;
 }
 
-.navbar-container-sections .sections .active {
+.navbar-container-menu .menu .active {
     background-color: red;
 }
 
