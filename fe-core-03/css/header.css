@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.header-container {
+    width: 70%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.header-container-logo {
+    float: left;
+}
+
+.header-container-user {
+    float: right;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.header span {
+    font-size: 14px;
+    color: lightgray;
+    text-transform: lowercase;
+    font-style: italic;
+    margin-left: -10px;
+}
+
+.header .login {
+    background: transparent;
+    border: transparent;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.fa-key {
+    padding: 10px;
+    color: red;
+    font-size: 14px;
+    transform: scale(-1, 1);
+}
+
+.header .contact {
+    background: red;
+    color: white;
+    border-color: transparent;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 14px;
+}
