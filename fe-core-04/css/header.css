@@ -1,0 +1,72 @@
+.header {
+    background-color: #000;
+}
+
+.fa-moon {
+    padding: 7.2px 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.fa-toggle-off {
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+}
+
+.fa-sun {
+    padding: 7.2px 5px;
+    font-size: 14px;
+    color: gray;
+}
+
+.fa-caret-down {
+    padding: 0 2px;
+    font-size: 14px;
+    color: rgb(3, 188, 188);
+}
+
+.header .container {
+    clear: both;
+    display: table;
+}
+
+.header .switcher-container {
+    float: left;
+    padding: 14px 0;
+}
+
+.header .switcher {
+    clear: both;
+    display: table;
+}
+
+.header .switcher li {
+    list-style-type: none;
+    float: left;
+}
+
+.header-navbar-container {
+    float: right;
+}
+
+.header-navbar-container .header-navbar {
+    clear: both;
+    display: table;
+}
+
+.header-navbar-container .header-navbar li {
+    list-style-type: none;
+    float: left;
+    padding: 20px 35px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-navbar-container .header-navbar li:last-child {
+    padding-top: 5px;
+}
+
+.header-navbar-container .header-navbar li a {
+    color: #abb0b7;
+}
