@@ -2,6 +2,7 @@
     background-color: #151515;
     position: sticky;
     top: 56.8px;
+    z-index: 1;
 }
 
 .navbar .container {
