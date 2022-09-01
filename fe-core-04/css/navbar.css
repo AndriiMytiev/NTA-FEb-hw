@@ -1,5 +1,7 @@
 .navbar {
     background-color: #151515;
+    position: sticky;
+    top: 56.8px;
 }
 
 .navbar .container {
@@ -21,12 +23,11 @@
     display: table;
 }
 
-.navbar-menu-container .navbar-menu li {
+.navbar-menu-container .navbar-menu li{
     list-style-type: none;
     float: left;
     padding: 32px 15px;
     font-size: 14px;
-    cursor: pointer;
 }
 
 .navbar-menu-container .navbar-menu li a {

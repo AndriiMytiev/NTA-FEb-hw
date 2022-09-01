@@ -1,0 +1,133 @@
+.preview-item img {
+    width: 100%;
+}
+
+.content {
+    background-color: #000;
+    margin-bottom: 100px;
+}
+
+.content-title {
+    width: fit-content;
+    margin: auto;
+    padding: 40px 0 15px 0;
+    color: white;
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 300;
+}
+
+.content-link {
+    padding: 0 0 10px 60px;
+}
+
+.content-link a{
+    font-size: 17px;
+    line-height: 19px;
+    color: #844CD4;
+}
+
+.fa-chevron-right {
+    font-size: 12px;
+    color: #844cd4;
+    margin-left: 3px;
+}
+
+.static-phone {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #844cd4;
+}
+
+.static-phone .fa-phone {
+    padding: 35px;
+    font-size: 30px;
+    color: white;
+}
+
+.content-container {
+    width: fit-content;
+    margin: auto;
+}
+
+.content-container-element {
+    vertical-align: top;
+    background-color: #1D1D1D;
+    border-radius: 4px;
+    width: 250px;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-right: 25px;
+}
+
+.content-element-image {
+    padding: 10px 20px;
+}
+
+.content-element-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container-element:last-child {
+    margin-right: 0;
+}
+
+.content-element-line {
+    border: 0.5px solid #2e2e2e;
+    background-color: #2e2e2e;
+    width: 100%;
+}
+
+.content-element-text .title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
+
+.content-element-text .price {
+    width: 100%;
+    clear: both;
+    display: table;
+}
+
+.content-element-text .price .usd {
+    float: left;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #D2D2D2;
+}
+
+.content-element-text .price .grn {
+    float: right;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content-element-text .element-button {
+    width: 85%;
+    margin: 40px auto 5px;
+}
+
+.content-element-text .element-button button {
+    background: #844CD4;
+    border: 1px solid #844CD4;
+    border-radius: 23px;
+    color: white;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}

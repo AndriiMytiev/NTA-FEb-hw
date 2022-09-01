@@ -1,5 +1,7 @@
 .header {
     background-color: #000;
+    position: sticky;
+    top: 0;
 }
 
 .fa-moon {
@@ -60,7 +62,6 @@
     float: left;
     padding: 20px 35px;
     font-size: 14px;
-    cursor: pointer;
 }
 
 .header-navbar-container .header-navbar li:last-child {
