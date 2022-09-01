@@ -49,12 +49,12 @@
     color: white;
 }
 
-.content-container {
+.content-list {
     width: fit-content;
     margin: auto;
 }
 
-.content-container-element {
+.content-list-element {
     vertical-align: top;
     background-color: #1D1D1D;
     border-radius: 4px;
@@ -74,7 +74,7 @@
     height: 100%;
 }
 
-.content-container-element:last-child {
+.content-list-element:last-child {
     margin-right: 0;
 }
 
