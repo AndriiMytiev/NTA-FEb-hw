@@ -189,6 +189,10 @@
     width: 100%;
 }
 
+.container-item.type-4 .item-text-maintext {
+    padding-bottom: 0;
+}
+
 .container-item.type-4 {
     padding: 40px 0;
 }
@@ -198,9 +202,8 @@
 }
 
 .container-item.type-4 .content-line {
-    margin: 0;
     width: 65%;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .container-item .item-text-quote {
