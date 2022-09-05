@@ -1,0 +1,106 @@
+.header {
+    background: url(/img/bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-container {
+    width: 70%;
+    margin: auto;
+    clear: both;
+    display: table;
+}
+
+.header-container .logo {
+    float: left;
+    padding: 18.9px 0;
+}
+
+.header-container .navbar {
+    float: right;
+}
+
+.header-container .navbar ul {
+    clear: both;
+    display: table;
+}
+
+.header-container .navbar ul li {
+    list-style: none;
+    float: left;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 30px 20px;
+}
+.header-container .navbar .header-menu-button {
+    padding: 10px 25px;
+    color: rgb(200, 59, 59);
+    border: 1px solid rgb(200, 59, 59);
+    border-radius: 30px;
+}
+
+.header-container .navbar ul li a{
+    color: white;
+}
+
+.header-text {
+    width: 70%;
+    margin: 150px auto 0;
+}
+
+.header-text .title {
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.header-text .main-text {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.header-user {
+    width: 20%;
+    margin: 50px auto 0;
+    padding: 45px;
+}
+
+.header-user-item {
+    background-color: white;
+    border-radius: 25px;
+    margin: 15px 0;
+    position: relative;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.header-user-item.left-user {
+    padding: 25px 30px 25px 40px;
+    left: -50px;
+}
+
+.header-user-item.left-user img {
+    position: absolute;
+    width: 90px;
+    left: -50px;
+    top: 5px;
+}
+
+.header-user-item.right-user {
+    padding: 25px 40px 25px 30px;
+    right: -50px;
+}
+
+.header-user-item.right-user img {
+    position: absolute;
+    right: -50px;
+    top: 5px;
+}
+

@@ -1,0 +1,262 @@
+.content-container {
+    width: 70%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.container-item {
+    padding: 80px 0;
+    clear: both;
+    display: table;
+}
+
+.container-item.type-1 .item-image {
+    width: 55%;
+    float: left;
+}
+
+.container-item .item-image img{
+    width: 100%;
+}
+
+.container-item.type-1 .item-text {
+    width: 40%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-item .item-text-title {
+    padding: 5px 0;
+    line-height: 1.7;
+    font-size: 30px;
+    width: 70%;
+} 
+
+.container-item .item-text-line {
+    border: 0;
+    background-color: red;
+    width: 45px;
+    height: 1px;
+}
+
+.container-item .item-text-maintext {
+    line-height: 1.7;
+    width: 80%;
+    padding: 20px 0 10px 0;
+    font-size: 16px;
+    color: rgb(151, 151, 151);
+}
+
+.container-item .item-text-link a {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(200, 59, 59);
+    text-decoration: underline;
+}
+
+.container-item .item-text-stats ul {
+    clear: both;
+    display: table;
+}
+
+.container-item .item-text-stats ul li {
+    float: left;
+    list-style: none;
+}
+
+.container-item .item-text-stats hr {
+    width: 1px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(151, 151, 151);
+    margin: 0 20px;
+}
+
+.container-item .item-text-stats h3 {
+    padding: 20px 0 5px 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.container-item .item-text-stats p {
+    color: rgb(121, 121, 121);
+    font-size: 12px;
+}
+
+.content-container .content-line {
+    margin: 80px auto;
+    border: 0;
+    background-color: rgb(229, 229, 229);
+    width: 90%;
+    height: 1px;
+}
+
+.container-item.type-2 .item-image {
+    width: 55%;
+    float: right;
+}
+
+.container-item.type-2 .item-text {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content-container .item-text-button button {
+    border: 1px solid rgb(247, 0, 132);
+    background-color: rgb(247, 0, 132);
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 150px;
+    color: white;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.container-item.type-3 .item-text-title {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.container-item.type-3 .item-text-maintext {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.container-item .item-menu {
+    padding: 50px 0 0 0;
+}
+
+.container-item .item-menu-element {
+    vertical-align: top;
+    width: 33%;
+    clear: both;
+    display: table;
+    display: inline-block;
+}
+
+.container-item .item-menu-image {
+    padding: 20px 0;
+    float: left;
+}
+
+.container-item .item-menu-text {
+    padding: 20px;
+    width: 80%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.item-menu-element .item-menu-title {
+    font-size: 16px;
+}
+
+.item-menu-element .item-menu-maintext {
+    padding: 10px 0;
+    color: rgb(116, 116, 116);
+    font-weight: 600px;
+    font-size: 14px;
+}
+
+.item-menu-element .item-menu-line {
+    border: 0;
+    background-color: rgb(229, 229, 229);
+    width: 300px;
+    height: 1px;
+    position: relative;
+    left: -60px;
+}
+
+.container-item.type-4 .item-image {
+    width: 50%;
+    float: right;
+}
+
+.container-item.type-4 .item-text {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container-item.type-4 .item-text-title {
+    width: 100%;
+}
+
+.container-item.type-4 {
+    padding: 40px 0;
+}
+
+.content.type-4 {
+    background-color: rgb(246, 246, 246);
+}
+
+.container-item.type-4 .content-line {
+    margin: 0;
+    width: 65%;
+    margin: 15px 0;
+}
+
+.container-item .item-text-quote {
+    width: 80%;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.container-item .item-text-author {
+    padding: 20px 0;
+    clear: both;
+    display: table;
+}
+
+.container-item .item-text-author .circle {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(206, 206, 206);
+}
+
+.container-item .item-text-author .author-name-block {
+    padding: 6.6px 15px;
+    float: right;
+}
+
+.item-text-author .author-name-block .author-name {
+    font-size: 14px;
+    line-height: 1.7;
+}   
+
+.item-text-author .author-name-block .author-post {
+    font-weight: 300;
+    font-size: 12px;
+    color: rgb(151, 151, 151);
+}
+
+.container-item.type-5 {
+    padding: 40px 0;
+}
+
+.container-item.type-5 .item-text-title {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+}
+
+.container-item.type-5 .item-text-maintext {
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.container-item.type-5 .item-text-button {
+    width: fit-content;
+    margin: 0 auto 25px;
+}
