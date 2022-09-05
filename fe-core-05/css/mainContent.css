@@ -113,6 +113,7 @@
     color: white;
     font-size: 12px;
     margin: 20px 0;
+    cursor: pointer;
 }
 
 .container-item.type-3 .item-text-title {
