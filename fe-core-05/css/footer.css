@@ -3,6 +3,7 @@
 }
 
 .footer-container {
+    position: relative;
     width: 70%;
     margin: auto;
     padding: 50px 0;
@@ -26,8 +27,8 @@
 }
 
 .footer-container-element.center {
-    position: relative;
-    top: 60px
+    position: absolute;
+    bottom: 50px;
 }   
 
 .footer-container-element.left .footer-container-text{
@@ -40,9 +41,10 @@
 }
 
 .footer-container-element.right {
-    position: relative;
-    top: 30px;
-    float: right;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    padding: 20px 0;
 } 
 
 .footer-container-list {
