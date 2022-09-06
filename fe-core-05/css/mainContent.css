@@ -5,6 +5,7 @@
 }
 
 .container-item {
+    margin: auto;
     padding: 80px 0;
     clear: both;
     display: table;
