@@ -1,0 +1,128 @@
+.header {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-container {
+    width: 80%;
+    margin: auto;
+}
+
+.mynav {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.my-navbar-right li {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.my-navbar-right li:last-child {
+    padding: 15px;
+}
+
+.my-navbar-right .header-menu-button {
+    padding: 10px 25px;
+    text-align: center;
+    color: rgb(200, 59, 59) !important;
+    border: 1px solid rgb(200, 59, 59);
+    border-radius: 30px;
+}
+
+.my-navbar-right li a {
+    color: white !important;
+}
+
+.header-title {
+    width: 70%;
+    margin: 0 auto 50px;
+}
+
+.header-title h1 {
+    margin-top: 80px;
+    font-size: 34px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 300;
+}
+
+.header-title p {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.header-email{
+	width: 45%;
+	margin: 0px auto;
+}
+
+.header-email input{
+    display: inline-block !important;
+    box-sizing: border-box;
+    border: 0;
+    width: 70% !important;
+    padding: 20px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+    border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.header-email button{
+    width: 30% !important;
+    box-sizing: border-box;
+    margin-left: -5px;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(247, 0, 132);
+    border-color: rgb(247, 0, 132);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.header-user {
+    width: 35%;
+    margin: 50px auto 0;
+    padding: 45px;
+}
+
+.header-user-item {
+    background-color: white;
+    border-radius: 25px;
+    margin: 15px 0;
+    position: relative;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.header-user-item.left-user {
+    padding: 25px 30px 25px 40px;
+    left: -50px;
+}
+
+.header-user-item.left-user img {
+    position: absolute;
+    width: 90px;
+    left: -50px;
+    top: 5px;
+}
+
+.header-user-item.right-user {
+    padding: 25px 40px 25px 30px;
+    right: -50px;
+}
+
+.header-user-item.right-user img {
+    position: absolute;
+    right: -50px;
+    top: 5px;
+}
