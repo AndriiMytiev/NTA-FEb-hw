@@ -8,6 +8,23 @@
     padding: 50px 0;
 }
 
+.footer-container .footer-container-item {
+    position: relative;
+}
+
+
+.footer-container-item .center-block {
+    position: absolute;
+    bottom: 0px;
+    left: 33%;
+}
+
+.footer-container-item .right-block {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 .footer-container .footer-container-text {
     width: 80%;
     margin: 0;
