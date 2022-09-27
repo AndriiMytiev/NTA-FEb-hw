@@ -106,7 +106,8 @@
 }
 
 .content.block-2 .form-title,
-.content.block-4 .form-title {
+.content.block-4 .form-title,
+.content.block-5 .form-title {
     background-color: #e89535;
     padding: 10px 20px;
     width: 90%;
@@ -114,7 +115,8 @@
 }
 
 .content.block-2 .form-title p,
-.content.block-4 .form-title p {
+.content.block-4 .form-title p,
+.content.block-5 .form-title p {
 	font-size: 26px;
     margin: 0;
 }
@@ -489,35 +491,42 @@
     padding-bottom: 0;
 }
 
-.content.block-4 .form-row {
+.content.block-4 .form-row,
+.content.block-5 .form-row {
     padding-bottom: 50px;
 }
 
-.content.block-4 .form-title {
+.content.block-4 .form-title,
+.content.block-5 .form-title {
     margin-left: 0;
 }
 
-.content.block-4 .input-data {
+.content.block-4 .input-data,
+.content.block-5 .input-data {
     padding: 15px 0;
     width: 70%;
     display: table;
     clear: both;
 }
 
-.content.block-4 .input-title {
+.content.block-4 .input-title,
+.content.block-5 .input-title {
     float: left;
 }
 
-.content.block-4 .input-set {
+.content.block-4 .input-set,
+.content.block-5 .input-set {
     float: right;
 }
 
-.content.block-4 .input-data label {
+.content.block-4 .input-data label,
+.content.block-5 .input-data label {
     margin: 0px;
     padding: 7px 0px;
 }
 
-.content.block-4 .input-data input {
+.content.block-4 .input-data input,
+.content.block-5 .input-data input {
     border: 0;
     cursor: pointer;
     width: 300px;
@@ -525,4 +534,20 @@
     padding: 7px 10px;
     border-radius: 5px;
     outline: none;
+}
+
+/* Section block-5 */
+
+.content.block-5 {
+    background-color: #666666;
+}
+
+.content.block-5 .content-container {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 0;
+}
+
+.content.block-5 .input-data {
+    width: 80%;
 }
