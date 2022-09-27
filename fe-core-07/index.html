@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Major</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/content.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-default mynav">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo"><img src="./img/Logo.png" alt="logo"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right my-navbar-right">
+                        <li><a href="#">Вызвать курьера</a></li>
+                        <li><a href="#">Рассчитать стоимость</a></li>
+                        <li><a href="#">Отслеживание груза</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li class="dropdown new-dropdown">
+                            <a href="#" class="dropdown-toggle new-dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/location.png" class="location-img">Выбор региона, город, телефон,
+                                название города, регион итд <span class="chevron">
+                                <i class="fas fa-chevron-down"></i></span></a>
+                            <ul class="dropdown-menu new-dropdown-toggle-menu">
+                              <li><a href="#">Мурманск</a></li>
+                              <li><a href="#">Новосибирск</a></li>
+                              <li><a href="#">Екатеринбург</a></li>
+                              <li><a href="#">Самара</a></li>
+                              <li><a href="#">Челябинск</a></li>
+                              <li><a href="#">Омск</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="content block-1">
+            <div class="content-container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h1>Компании, доверяющие нам свои грузы:</h1>
+                        <div class="images-block">
+                            <img src="img/sever.png">
+                            <img src="img/derussa.png">
+                            <img src="img/leroy.png">
+                        </div>
+                        <div class="images-block">
+                            <img src="img/invitro.png">
+                            <img src="img/bisquite.png">
+                            <img src="img/ultra.png">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="delivery-price-block">
+                            <a href="#"><button type="button">Рассчитать стоимость</button></a>
+                            <a href="#"><button type="button">Вызвать курьера</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content block-2">
+            <div class="content-container">
+                <div class="title">
+                    <h2>Блок рассчета стоимости</h2>
+                    <p>Если у Вас есть договор с Major Express воспользуйтесь личным кабинетом</p>
+                </div>
+                <div class="row form-row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-block">
+                            <div class="form-title">
+                                <p>Откуда забрать?</p>
+                            </div>
+                            <form class="form-main">
+                                <div class="select-contry">
+                                    <div class="select-title">
+                                        <label>Страна</label>
+                                    </div>
+                                    
+                                    <div class="select-set add-search-arrow">
+                                        <select name="select-set" id="select-set">
+                                            <option>Россия</option>
+                                            <option value="1">Россия</option>
+                                            <option value="2">Россия</option>
+                                            <option value="3">Россия</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="select-city">
+                                    <div class="select-title">
+                                        <label>Город</label>
+                                    </div>
+                                    
+                                    <div class="select-set add-search-arrow">
+                                        <select name="select-set" id="select-set">
+                                            <option>Москва</option>
+                                            <option value="1">Москва</option>
+                                            <option value="2">Санкт-Петербург</option>
+                                            <option value="3">Самара</option>
+                                            <option value="4">Мурманск</option>
+                                            <option value="5">Екатеринбург</option>
+                                            <option value="6">Новосибирск</option>
+                                            <option value="7">Омск</option>
+                                            <option value="8">Челябинск</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="date-block">
+                                <label for="date">Дата отправки
+                                    <img src="img/calendar.png" alt="">
+                                    <input type="datetime-local" id="date" name="date" value="2022-08-22T22:15">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="form-block">
+                            <div class="form-title">
+                                <p>Куда привезти?</p>
+                            </div>
+                            <form class="form-main">
+                                <div class="select-contry">
+                                    <div class="select-title">
+                                        <label>Страна</label>
+                                    </div>
+                                    
+                                    <div class="select-set add-search-arrow">
+                                      <select name="select-set" id="select-set">
+                                        <option>Россия</option>
+                                        <option value="1">Россия</option>
+                                        <option value="2">Россия</option>
+                                        <option value="3">Россия</option>
+                                      </select>
+                                    </div>
+                                </div>
+
+                                <div class="select-city">
+                                    <div class="select-title">
+                                        <label>Город</label>
+                                    </div>
+                                    
+                                    <div class="select-set add-search-arrow">
+                                        <select name="select-set" id="select-set">
+                                            <option>Москва</option>
+                                            <option value="1">Москва</option>
+                                            <option value="2">Санкт-Петербург</option>
+                                            <option value="3">Самара</option>
+                                            <option value="4">Мурманск</option>
+                                            <option value="5">Екатеринбург</option>
+                                            <option value="6">Новосибирск</option>
+                                            <option value="7">Омск</option>
+                                            <option value="8">Челябинск</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content block-3">
+            <div class="content-container">
+                <form class="form-main">
+                    <div class="select-block">
+                        <div class="select-title">
+                            <label>Тип груза</label>
+                        </div>
+                        
+                        <div class="select-set add-search-arrow">
+                            <select name="select-set" id="select-set">
+                                <option>Документы</option>
+                                <option value="1">Документы</option>
+                                <option value="2">Груз</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="select-block">
+                        <div class="select-title">
+                            <label>Вес груза</label>
+                        </div>
+                        
+                        <div class="select-set">
+                            <input type="number" class="sel-set-min" name="weight" placeholder="0,0">
+                        </div>
+                    </div>
+
+                    <div class="select-block">
+                        <div class="select-title">
+                            <label>Габариты</label>
+                        </div>
+                        
+                        <div class="select-set">
+                            <input type="number" class="sel-set-min" name="weight" placeholder="Длина(см)">
+                            <input type="number" class="sel-set-min" name="weight" placeholder="Ширина(см)">
+                            <input type="number" class="sel-set-min" name="weight" placeholder="Высота(см)">
+                        </div>
+                    </div>
+                </form>
+                <div class="upload-block">
+                    <label class="file-upload">
+                        <span class="button-file"><img src="img/plus.png">Добавить груз/документ</span>
+                        <input type="file">
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="content block-4">
+            <div class="content-container">
+                <div class="row add-order-block">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="#"><button type="button">Сделать заказ</button></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <a href="#"><button type="button">Рассчитать</button></a>
+                    </div>
+                </div>
+
+                <div class="row type-of-delivery">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 element-block">
+                        <div class="element">
+                            <a href="#">
+                                <div class="element-image-block"><img src="img/geo-location.png"></div>
+                                <div class="element-name">
+                                    <p>Отправить из офиса</p>
+                                </div>
+                                <div class="element-price">
+                                    <p>Цена: <span>1500р</span></p>
+                                </div>
+                            </a>   
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 element-block">
+                        <div class="element">
+                            <a href="#">
+                                <div class="element-image-block"><img src="img/desktop.png"></div>
+                                <div class="element-name">
+                                    <p>Вызвать курьера онлайн</p>
+                                </div>
+                                <div class="element-price">
+                                    <p>Цена: <span>1500р</span></p>
+                                </div>
+                            </a>   
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 element-block">
+                        <div class="element">
+                            <a href="#">
+                                <div class="element-image-block"><img src="img/phone.png"></div>
+                                <div class="element-name">
+                                    <p>Вызвать курьера по телефону</p>
+                                </div>
+                                <div class="element-price">
+                                    <p>Цена: <span>1500р</span></p>
+                                </div>
+                            </a>   
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row location-block">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                        <div class="location-info">
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20631.36676090491!2d30.44897192847133!3d49.73111513047107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d371019d524c8f%3A0xd95ce8a4fcc40b18!2sZhytni%20Hory%2C%20Kyiv%20Oblast%2C%2009611!5e0!3m2!1sen!2sua!4v1664270357806!5m2!1sen!2sua" 
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,97 @@
+.header {
+    background-color: #1a1a1a;
+}
+
+.mynav {
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0;
+}
+
+.navbar-brand.logo {
+    padding: 30px 20px 30px 60px;
+    height: fit-content;
+}
+
+.navbar-brand.logo img{
+    width: 150px;
+}
+
+.my-navbar-right li {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 30.5px 30px;
+    text-transform: uppercase;
+}
+
+.my-navbar-right li a {
+    color: white !important;
+}
+
+.mydropdown {
+    max-width: 330px!important;
+    outline: none;
+}
+
+.mydropdown button {
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0;
+}
+
+.my-navbar-right li a:hover, .mydropdown button:hover {
+    color: #e89535!important;
+    transition: 0.5s;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover{
+    background-color: #1a1a1a;
+}
+
+.new-dropdown {
+    padding: 20.5px 30px !important;
+    margin-right: 30px !important;
+	max-width: 330px!important;
+	outline: none;
+}
+
+.location-img {
+    position: absolute;
+    width: 25px;
+    left: -15px;
+    top: 15px;
+}
+
+.new-dropdown-toggle .fa-chevron-down {
+    font-size: 30px;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+}
+
+.new-dropdown-toggle-menu {
+	background-color: #1a1a1a!important;
+	min-width: 330px!important;
+}
+
+.new-dropdown-toggle-menu li {
+    padding: 10px 35px;
+}
+
+.new-dropdown-toggle-menu li a {
+    width: fit-content;
+    padding: 0;
+    color: #e89535!important;
+    text-transform: none !important;
+}
+
+.new-dropdown-toggle-menu li a:hover {
+    background-color: #1a1a1a !important;
+    color: white !important;
+    text-decoration: underline dashed;
+    transition: 0.5s;
+}
