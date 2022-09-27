@@ -229,6 +229,10 @@
     margin-bottom: 30px;
 }
 
+.content.block-3 .form-main .select-block option{
+    color: #000000;
+}
+
 .content.block-3 .form-main .select-set input {
     width: 150px;
 }
