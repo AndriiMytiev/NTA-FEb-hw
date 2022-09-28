@@ -1,5 +1,5 @@
 /* Section block 1 */
-.content.block-1 {
+.content-block-1 {
     background: linear-gradient(
 		rgba(0, 0, 0, 0.3), 
 		rgba(0, 0, 0, 0.3)
@@ -7,14 +7,14 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-    padding: 120px 50px;
+    padding: 80px 50px;
 }
 
 .content-container {
     padding: 50px 15px;
 }
 
-.content.block-1 h1 {
+.content-block-1 h1 {
 	font-size: 44px;
     word-wrap: break-word;
 	font-weight: 900;
@@ -24,34 +24,34 @@
     text-transform: uppercase;
 }
 
-.images-block {
+.content-block-1 .images-block {
 	margin: 30px 0;
 }
 
-.images-block img {
+.content-block-1 .images-block img {
     width: 230px;
 	padding: 10px;
 	margin: 0 40px;
 	opacity: 0.7;
 }
 
-.images-block img:last-child {
+.content-block-1 .images-block img:last-child {
 	width: 125px !important;
 }
 
-.delivery-price-block {
+.content-block-1 .delivery-price-block {
 	max-width: 400px;
     background-color: rgba(0,0,0,0.5);
 	border-radius: 15px;
 	text-align: center;
 }
 
-.delivery-price-block a {
+.content-block-1 .delivery-price-block a {
 	color: #fff;
     font-size: 18px;
 }
 
-.delivery-price-block button {
+.content-block-1 .delivery-price-block button {
 	background-color: #e89535;
 	padding: 15px 45px;
 	border-radius: 30px;
@@ -62,100 +62,144 @@
 	border: 0;
 }
 
-.delivery-price-block a:first-child button {
+.content-block-1 .delivery-price-block a:first-child button {
 	margin-top: 55px;
 	margin-bottom: 10px;
 }
 
-.delivery-price-block a:last-child button {
+.content-block-1 .delivery-price-block a:last-child button {
 	margin-bottom: 55px;
 	margin-top: 10px;	
 }
 
-.delivery-price-block button:hover {
+.content-block-1 .delivery-price-block button:hover {
 	color: #e89535;
 	background-color: #fff;
 	transition: 0.5s;
 	outline: none;
 }
 
+.content-block-1 .video-block {
+    padding-left: 30px;
+    display: table;
+    clear: both;
+	border-radius: 15px;
+	font-size: 20px;
+    color: #ffffff;
+	margin: 20px 50px;
+}
+
+.content-block-1 .btn-video {
+    float: left;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px !important;
+	padding: 15px 30px !important;
+	outline: 0;
+}
+
+.content-block-1 .btn-video:hover {
+	background-color: #fff;
+	transition: 0.5s;
+	outline: 0;
+}
+
+.content-block-1 .btn-video img {
+	max-width: 40px;
+}
+
+.content-block-1 .video-block p {
+    float: right;
+	padding: 20px;
+    margin: 0;
+}
+
+.content-block-1 .new-modal {
+	top: 15% !important;
+} 
+
+.content-block-1 .new-modal-content {
+    background-color: #666666;
+    padding: 30px;
+	height: 500px;
+}
+
 /* Section block-2 */
 
-.content.block-2 {
+.content-block-2 {
     background-color: #333330;
 }
 
-.content.block-2 .title {
+.content-block-2 .title {
     width: fit-content;
     margin: auto;
     text-align: center;
 }
 
-.content.block-2 .title h2 {
+.content-block-2 .title h2 {
     text-transform: uppercase;
     font-size: 30px;
     margin: 20px 0;
 }
 
-.content.block-2 .title p {
+.content-block-2 .title p {
     font-size: 19px;
 }
 
-.content.block-2 .content-container {
+.content-block-2 .content-container {
     width: 80%;
     margin: auto;
 }
 
-.content.block-2 .form-title,
-.content.block-4 .form-title,
-.content.block-5 .form-title {
+.content-block-2 .form-title,
+.content-block-4 .form-title,
+.content-block-5 .form-title {
     background-color: #e89535;
     padding: 10px 20px;
     width: 90%;
     margin: 0 auto 40px;
 }
 
-.content.block-2 .form-title p,
-.content.block-4 .form-title p,
-.content.block-5 .form-title p {
+.content-block-2 .form-title p,
+.content-block-4 .form-title p,
+.content-block-5 .form-title p {
 	font-size: 26px;
     margin: 0;
 }
 
-.content.block-2 .form-row {
+.content-block-2 .form-row {
     margin-top: 70px;
 }
 
-.content.block-2 .form-main .select-contry, .select-city {
+.content-block-2 .form-main .select-contry, .select-city {
     width: 80%;
     margin: 0px auto 30px;
 }
 
-.content.block-2 .form-main .select-contry, .select-city {
+.content-block-2 .form-main .select-contry, .select-city {
     display: table;
     clear: both;
 }
 
-.content.block-2 .form-main .select-title, 
-.content.block-3 .form-main .select-title {
+.content-block-2 .form-main .select-title, 
+.content-block-3 .form-main .select-title {
     float: left;
 }
 
-.content.block-2 .form-main .select-set,
-.content.block-3 .form-main .select-set {
+.content-block-2 .form-main .select-set,
+.content-block-3 .form-main .select-set {
     position: relative;
     float: right;
 }
 
-.content.block-2 .form-main .select-title label,
-.content.block-3 .form-main .select-title label {
+.content-block-2 .form-main .select-title label,
+.content-block-3 .form-main .select-title label {
     margin: 0;
     padding: 8.4px 0;
 }
 
-.content.block-2 .form-main .select-set select,
-.content.block-3 .form-main .select-set select, 
-.content.block-3 .form-main .select-set input {
+.content-block-2 .form-main .select-set select,
+.content-block-3 .form-main .select-set select, 
+.content-block-3 .form-main .select-set input {
     border: 0;
     cursor: pointer;
     width: 300px;
@@ -165,7 +209,7 @@
     outline: none;
 }
 
-.content.block-2 .form-main .select-set option {
+.content-block-2 .form-main .select-set option {
     color: #000000;
 }
 
@@ -212,56 +256,56 @@
 
 /* Section block 3 */
 
-.content.block-3 {
+.content-block-3 {
     background-color: #666666;
 	color: #fff;
 }
 
-.content.block-3 .content-container {
+.content-block-3 .content-container {
     width: 70%;
     margin: auto;
     padding: 80px 0;
 }
 
-.content.block-3 .form-main .select-block {
+.content-block-3 .form-main .select-block {
     width: 40%;
     display: table;
     clear: both;
     margin-bottom: 30px;
 }
 
-.content.block-3 .form-main .select-block option{
+.content-block-3 .form-main .select-block option{
     color: #000000;
 }
 
-.content.block-3 .form-main .select-set input {
+.content-block-3 .form-main .select-set input {
     width: 150px;
 }
 
-.content.block-3 .form-main .select-block:nth-child(2) {
+.content-block-3 .form-main .select-block:nth-child(2) {
     width: 25.5%;
 }
 
-.content.block-3 .form-main .select-block:nth-child(3) {
+.content-block-3 .form-main .select-block:nth-child(3) {
     width: 61%;
 }
 
-.content.block-3 .form-main .select-block:nth-child(3) input {
+.content-block-3 .form-main .select-block:nth-child(3) input {
     margin-right: 20px;
 }
 
-.content.block-3 .upload-block {
+.content-block-3 .upload-block {
 	margin-top: 30px;
 	margin-bottom: 0;
 }
 
-.content.block-3 .upload-block .file-upload {
+.content-block-3 .upload-block .file-upload {
     position: relative;
     font-size: 14px;           
     margin: 0;                       
 }
 
-.content.block-3 .upload-block .button-file {
+.content-block-3 .upload-block .button-file {
     cursor: pointer; 
 }
 
@@ -283,16 +327,18 @@
 }
 
 /* Section block-4 */
-.content.block-4 {
+.content-block-4 {
     background-color: #333330;
 }
 
-.content.block-4 .content-container {
+.content-block-4 .content-container,
+.content-block-6 .content-container,
+.content-block-7 .content-container {
     width: 80%;
     margin: auto;
 }
 
-.content.block-4 .add-order-block button {
+.content-block-4 .add-order-block button {
     background-color: #e89535;
 	padding: 15px 45px;
 	border-radius: 30px;
@@ -303,39 +349,39 @@
 	border: 0;
 }
 
-.content.block-4 .add-order-block a {
+.content-block-4 .add-order-block a {
     width: fit-content;
 	color: #fff;
     font-size: 18px;
 }
 
-.content.block-4 .add-order-block button:hover {
+.content-block-4 .add-order-block button:hover {
 	color: #e89535;
 	background-color: #fff;
 	transition: 0.5s;
 	outline: none;
 }
 
-.content.block-4 .add-order-block button:first-child {
+.content-block-4 .add-order-block button:first-child {
     margin-right: 80px;
 }
 
-.content.block-4 .add-order-block div:first-child button{
+.content-block-4 .add-order-block div:first-child button{
     float: right;
     margin-right: 25px;
 }
 
-.content.block-4 .add-order-block div:last-child button{
+.content-block-4 .add-order-block div:last-child button{
     float: left;
     margin-left: 25px;
 }
 
-.content.block-4 .type-of-delivery .element-block {
+.content-block-4 .type-of-delivery .element-block {
     margin: 30px 0;
     padding: 15px;
 }
 
-.content.block-4 .type-of-delivery .element {
+.content-block-4 .type-of-delivery .element {
     max-width: 100%;
     padding: 20px;
 	text-align: center;
@@ -344,77 +390,77 @@
 	border-radius: 5px;
 }
 
-.content.block-4 .type-of-delivery .element:hover {
+.content-block-4 .type-of-delivery .element:hover {
     outline: none;
 	border: 2px solid #e89535;
     transition: 0.5s;
 }
 
-.content.block-4 .type-of-delivery .element-image-block {
+.content-block-4 .type-of-delivery .element-image-block {
     width: 160px;
     height: 130px;
     margin: 30px auto;
 }
 
-.content.block-4 .type-of-delivery .element-image-block img {
+.content-block-4 .type-of-delivery .element-image-block img {
     width: 100%;
     height: 100%;
 }
 
-.content.block-4 .type-of-delivery .element a {
+.content-block-4 .type-of-delivery .element a {
     color: #ffffff;
 	text-decoration: none;
 }
 
-.content.block-4 .type-of-delivery .element-name {
+.content-block-4 .type-of-delivery .element-name {
     height: 100px;
     width: 80%;
     margin: auto;
 }
 
-.content.block-4 .type-of-delivery .element-name p{
+.content-block-4 .type-of-delivery .element-name p{
     font-size: 26px;
 }
 
-.content.block-4 .type-of-delivery .element-price p{
+.content-block-4 .type-of-delivery .element-price p{
     font-size: 15px;
 }
 
-.content.block-4 .type-of-delivery .element-price span {
+.content-block-4 .type-of-delivery .element-price span {
 	font-size: 22px;
 	color: #e89535;
 }
 
-.content.block-4 .location-block {
+.content-block-4 .location-block {
     padding: 0px 15px;
 }
 
-.content.block-4 .location-block .left-block {
+.content-block-4 .location-block .left-block {
     background-color: #666666;
     padding: 0 0 3px 0;
     border-radius: 5px 0 0 5px;
 }
 
-.content.block-4 .location-block .right-block {
+.content-block-4 .location-block .right-block {
     padding: 0;
 }
 
-.content.block-4 .location-map iframe{
+.content-block-4 .location-map iframe{
     border-radius: 0 5px 5px 0;
 }
 
-.content.block-4 .location-info {
+.content-block-4 .location-info {
     padding: 0 70px;
 }
 
-.content.block-4 .location-button-block {
+.content-block-4 .location-button-block {
     max-width: 350px;
     width: 100%;
     margin: auto;
     padding: 30px 0;
 }
 
-.content.block-4 .location-button-block button {
+.content-block-4 .location-button-block button {
     max-width: 350px;
     width: 100%;
     border-radius: 5px;
@@ -426,44 +472,44 @@
     margin: 10px 0;
 }
 
-.content.block-4 .location-button-block button:hover {
+.content-block-4 .location-button-block button:hover {
     outline: none;
 	border: 2px solid #e89535;
     transition: 0.5s;
 }
 
-.content.block-4 .location-info-text {
+.content-block-4 .location-info-text {
     max-width: 350px;
     width: 100%;
     margin: auto;
 }
 
-.content.block-4 .location-info-text p {
+.content-block-4 .location-info-text p {
     color: #ffffff;
     margin-bottom: 25px;
 }
 
-.content.block-4 .location-info-text a {
+.content-block-4 .location-info-text a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.content.block-4 .location-info-text a:hover {
+.content-block-4 .location-info-text a:hover {
     color: #e89535;
     text-decoration: underline;
     transition: 0.5s;
 }
 
-.content.block-4 .nav-list {
+.content-block-4 .nav-list {
     padding: 50px 0;
 }
 
-.content.block-4 .nav-list-menu {
+.content-block-4 .nav-list-menu {
     margin: 0;
     display: table;
 }
 
-.content.block-4 .nav-list-menu li {
+.content-block-4 .nav-list-menu li {
     list-style: none;
     color: #ffffff;
     margin-right: 15px;
@@ -471,67 +517,67 @@
     float: left;
 }
 
-.content.block-4 .nav-list-menu li a:hover {
+.content-block-4 .nav-list-menu li a:hover {
     color: #e89535;
     text-decoration: underline;
     transition: 0.5s;
 }
 
-.content.block-4 .nav-list-menu .arrow-right {
+.content-block-4 .nav-list-menu .arrow-right {
     font-size: 26px;
     padding: 0;
 }
 
-.content.block-4 .nav-list-menu li a {
+.content-block-4 .nav-list-menu li a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.content.block-4 .nav-list-menu .fa-angle-right {
+.content-block-4 .nav-list-menu .fa-angle-right {
     color: #ffffff;
     font-size: 16px;
 }
 
-.content.block-4 .content-container {
+.content-block-4 .content-container {
     padding-bottom: 0;
 }
 
-.content.block-4 .form-row,
-.content.block-5 .form-row {
+.content-block-4 .form-row,
+.content-block-5 .form-row {
     padding-bottom: 50px;
 }
 
-.content.block-4 .form-title,
-.content.block-5 .form-title {
+.content-block-4 .form-title,
+.content-block-5 .form-title {
     margin-left: 0;
 }
 
-.content.block-4 .input-data,
-.content.block-5 .input-data {
+.content-block-4 .input-data,
+.content-block-5 .input-data {
     padding: 15px 0;
     width: 70%;
     display: table;
     clear: both;
 }
 
-.content.block-4 .input-title,
-.content.block-5 .input-title {
+.content-block-4 .input-title,
+.content-block-5 .input-title {
     float: left;
 }
 
-.content.block-4 .input-set,
-.content.block-5 .input-set {
+.content-block-4 .input-set,
+.content-block-5 .input-set {
     float: right;
 }
 
-.content.block-4 .input-data label,
-.content.block-5 .input-data label {
+.content-block-4 .input-data label,
+.content-block-5 .input-data label {
     margin: 0px;
     padding: 7px 0px;
 }
 
-.content.block-4 .input-data input,
-.content.block-5 .input-data input {
+.content-block-4 .input-data input,
+.content-block-5 .input-data input {
     border: 0;
     cursor: pointer;
     width: 300px;
@@ -543,16 +589,257 @@
 
 /* Section block-5 */
 
-.content.block-5 {
+.content-block-5 {
     background-color: #666666;
 }
 
-.content.block-5 .content-container {
+.content-block-5 .content-container {
     width: 80%;
     margin: auto;
     padding-bottom: 0;
 }
 
-.content.block-5 .input-data {
+.content-block-5 .input-data {
     width: 80%;
+}
+
+/* Section block-6 */
+
+.content-block-6 {
+    background-color: #333330;
+}
+
+.content-block-6 .info-element {
+    max-width: 530px;
+    width: 90%;
+    min-height: 85px;
+    height: 105px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #666666;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content-block-6 .info-element p {
+    font-size: 14px;
+    padding: 10px 5px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.content-block-6 .info-element span {
+    margin: 0;
+    font-size: 18px;
+    color: #e89535;
+}
+
+.content-block-6 .info-element a {
+    font-size: 16px;
+    color: #e89535;
+    font-weight: 300; 
+}
+
+.content-block-6 .info-element .price {
+    padding: 0;
+}
+
+.content-block-6 .checkbox-container {
+    position: relative;
+	padding-left: 35px;
+}
+
+.content-block-6 .checkbox-container input {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0;
+	height: 25px;
+	width: 21px;
+	z-index: 1;
+	top: 13px;
+	left: 5px;
+    margin: 0;
+}
+
+.content-block-6 .checkbox-checked {
+	position: absolute;
+	top: 13px;
+	left: 5px;
+	height: 20px;
+	width: 20px;
+    text-align: center;
+    font-size: 14px !important;
+    color: #ffffff !important;
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.content-block-6 .checkbox-container:hover input ~ .checkbox-checked {
+    color: #e89535 !important;
+	background-color: #e89535;
+    transition: 0.5s;
+}
+
+.content-block-6 .checkbox-container input:checked ~ .checkbox-checked {
+    color: white !important;
+	background-color: #e89535;
+    transition: 0.5s;
+}
+
+.content-block-6 .delivery-type {
+    background-color: #666666;
+    margin: 35px 20px;
+    width: 90%;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.content-block-6 .delivery-type .checkbox-container  p {
+    color: #e89535;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 15px;
+    margin: 0;
+}
+
+.content-block-6 .delivery-type .checkbox-container input {
+    top: 18px;
+} 
+
+.content-block-6 .delivery-type .checkbox-container .checkbox-checked {
+    top: 18px;
+} 
+
+.content-block-6 .delivery-type .delivery-type-info {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.content-block-6 .delivery-type .delivery-type-info p {
+    margin: 0;
+}
+
+.content-block-6 .delivery-price-block {
+    float: right;
+    padding-right: 20px;
+}
+
+.content-block-6 .delivery-price-block p {
+    padding-top: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+.content-block-6 .delivery-price-block span {
+    color: #e89535;
+    font-size: 16px;
+}
+
+.content-block-6 .courier-button {
+    width: fit-content;
+    margin: auto;
+}
+
+.content-block-6 .courier-button button {
+    background-color: #e89535;
+	padding: 15px 45px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	width: 100%;
+	max-width: 300px;
+	border: 0;
+    transition: 0.5s;
+}
+
+.content-block-6 .courier-button a {
+    width: fit-content;
+	color: #fff;
+    font-size: 18px;
+}
+
+.content-block-6 .courier-button button:hover {
+	color: #e89535;
+	background-color: #fff;
+	transition: 0.5s;
+	outline: none;
+}
+
+/* Section block-7 */
+
+.content-block-7 {
+    background-color: #666666;
+}
+
+.content-block-7 h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content-block-7 .promo-block {
+	text-align: center;
+	margin: 40px 20px;
+    max-width: 260px;
+    width: 100%;
+}
+.content-block-7 .promo-block div {
+    width: 100%;
+    height: 120px;
+    margin: auto;
+}
+.content-block-7 .promo-block div img {
+	max-width: 150px;
+	height: 100px;
+}
+.content-block-7 .promo-block p {
+	font-size: 16px;
+    max-width: 255px;
+    margin: auto;
+}
+
+/* Section block-8 */
+
+.content-block-8 {
+    background-color: #333330;
+}
+
+.content-block-8 .content-container {
+    padding: 0px 15px;
+}
+
+.content-block-8 .contact-block {
+    padding: 30px 50px;
+}
+
+.content-block-8 .contact-block:first-child {
+    margin-top: 75px;
+}
+
+.content-block-8 .contact-block:last-child {
+    margin-bottom: 75px;
+}
+
+.content-block-8 .contact-block img {
+    max-width: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.content-block-8 .contact-block a {
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 5px 25px;
+}
+
+.content-block-8 .contact-block a:hover span{
+	color: #e89535;
+	text-decoration: none;
+    transition: 0.5s;
+}
+
+.content-block-8 .row-element {
+    padding: 0;
 }

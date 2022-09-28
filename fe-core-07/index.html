@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <header class="header">
@@ -51,7 +52,7 @@
         </nav>
     </header>
     <main>
-        <section class="content block-1">
+        <section class="content-block-1">
             <div class="content-container">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
@@ -76,9 +77,24 @@
                     </div>
                 </div>
             </div>
+
+            <div class="video-block">
+                <button type="button" class="btn btn-video" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <img src="img/small-play.png">
+                </button>
+                <p>Наше официальное видео</p>
+                <div class="modal fade bs-example-modal-lg new-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content new-modal-content">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="content block-2">
+        <section class="content-block-2">
             <div class="content-container">
                 <div class="title">
                     <h2>Блок рассчета стоимости</h2>
@@ -182,7 +198,7 @@
             </div>
         </section>
 
-        <section class="content block-3">
+        <section class="content-block-3">
             <div class="content-container">
                 <form class="form-main">
                     <div class="select-block">
@@ -230,7 +246,7 @@
             </div>
         </section>
 
-        <section class="content block-4">
+        <section class="content-block-4">
             <div class="content-container">
                 <div class="row add-order-block">
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -407,7 +423,7 @@
             </div>
         </section>
 
-        <section class="content block-5">
+        <section class="content-block-5">
             <div class="content-container">
                 <div class="row form-row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -510,7 +526,200 @@
                 </div>
             </div>
         </section>
+
+        <section class="content-block-6">
+            <div class="content-container">
+                <div class="row info-block">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-element">
+                            <p>Дата отправки</p>
+                            <p><span>10 января с 09:00 до 22:00</span></p>
+                        </div>
+
+                        <div class="info-element">
+                            <p>Забрать из России, Москва</p>
+                            <p>Привезти в Россию, Санкт-Петербург</p>
+                        </div>
+
+                        <div class="info-element">
+                            <p>Предпологаемая дата доставки</p>
+                            <p><span>12 января с 09:00 до 22:00</span></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="info-element">
+                            <p>Документ, 1,5кг</p>
+                            <p>10х10х8</p>
+                        </div>
+
+                        <div class="info-element">
+                            <p>Отправить из офиса</p>
+                            <p>Отделение №1</p>
+                        </div>
+
+                        <div class="info-element">
+                            <p>Получатель - Россия, Москва, адрес</p>
+                            <p>Имя Фамилия, телефон, Email</p>
+                        </div>
+
+                        <div class="info-element">
+                            <p>Стоимость доставки <span class="price">32000р</span></p>
+                            <label for="confirm-checkbock" class="checkbox-container">
+                                <input type="checkbox" name="confirm-checkbock">
+                                <span class="checkbox-checked">✓</span>
+                                <p>Я подтверждаю согласие с <span><a href="#"> условиями текст</a></span></p>
+                            </label>
+                        </div>  
+                    </div>
+                </div>
+                <div class="upload-block">
+                    <label class="file-upload">
+                        <a href="#"><span class="button-file"><img src="img/plus.png">Оформить допуслуги</span></a>
+                    </label>
+                </div>
+
+                <div class="row delivery-type">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <label for="confirm-checkbock" class="checkbox-container">
+                            <input type="checkbox" name="confirm-checkbock">
+                            <span class="checkbox-checked">✓</span>
+                            <p>Доставка в руки</p>
+                        </label>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="delivery-type-info">
+                            <p>Описание услуги, текст, описание текст, описание</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="delivery-price-block">        
+                            <p>Стоимость услуги</p>
+                            <span>600p</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row delivery-type">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <label for="confirm-checkbock" class="checkbox-container">
+                            <input type="checkbox" name="confirm-checkbock">
+                            <span class="checkbox-checked">✓</span>
+                            <p>Доп услуга</p>
+                        </label>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="delivery-type-info">
+                            <p>Описание услуги, текст, описание текст, описание</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="delivery-price-block">        
+                            <p>Стоимость услуги</p>
+                            <span>600p</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courier-button">
+                    <a href="#"><button type="button">Вызвать курьера</button></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content-block-7">
+            <div class="content-container">
+                <h3>Региональное промо</h3>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="promo-block">
+                            <div><img src="img/bell.png"></div>
+                            <p>Бесплатное уведомление о доставке</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="promo-block">
+                            <div><img src="img/shield.png"> </div>
+                            <p>Страхование вех грузов по умолчанию</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="promo-block">
+                            <div><img src="img/house2.png"></div>
+                        <p>Пункт выдачи заказов интернет магазинов (OZON, My-Shop)</p>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                       <div class="promo-block less-marg-left">
+                            <div><img src="img/fedex.png"></div>
+                            <p>Международные отправления по линии FedEx Express</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="promo-block">
+                            <div><img src="img/clock.png"></div>
+                            <p>Сроки доставки по России - от 1 дня</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-block-8">
+            <div class="content-container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 row-element">
+                        <div class="contact-block">
+                            <div class="contact-block-element">
+                                <a href="tel:8(495)646-29-49"><img src="img/phone-sm.png"><span>8(495)646-29-49</span></a>
+                            </div>
+                
+                            <div class="contact-block-element">
+                                <a href="mailto:major@gmail.com"><img src="img/mail.png"><span>major@gmail.com</span></a>
+                            </div>
+                
+                            <div class="contact-block-element">
+                                <a href="#"><img src="img/house.png"><span>ул. Добролюбова, д.2, стр. 1, Москва, 121059</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 row-element">
+                        <div class="location-map-block">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.8041112876685!2d37.4955980159302!3d55.74453248055111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54950986756d7%3A0x44a1773a382faac4!2z0YPQuy4g0JHQsNGA0LrQu9Cw0Y8sIDEyLzEyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIxMzA5!5e0!3m2!1sru!2sua!4v1549107800194"
+                            width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="content-container">
+            <div class="footer-block">
+                <p><a href="">Major Express</a></p>
+                <p>2019</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
