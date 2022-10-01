@@ -2,6 +2,7 @@
     background: url('../images/header/bg.png') no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 38px;
     padding-bottom: 65px;
 }
 
@@ -9,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 38px;
 }
 
 .header-nav {
@@ -183,7 +183,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 133px;
+    width: 90%;
     margin-top: 77px;
     margin-bottom: 130px;
 }
