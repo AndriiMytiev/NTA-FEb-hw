@@ -17,7 +17,8 @@
     align-items: center;
 }
   
-.header-nav .phone {
+.header-nav .phone,
+.footer-inner .phone {
     color: #ffffff;
     font-size: 24px;
     line-height: 28px;
@@ -34,6 +35,11 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-left: 46px;
+}
+
+
+.menu-burger-open:hover span {
+    background-color: #FFC50E;
 }
 
 .menu-burger-open:focus ~ .menu {
@@ -82,7 +88,7 @@
     right: -100%;
     width: 543px;
     height: 100%;
-    z-index: 2;
+    z-index: 5;
     padding: 116px 0 98px 76px;
     background: #000000;
     transition: 0.5s;
@@ -303,4 +309,41 @@
 
 .middle-bottom-element:hover svg * {
     fill: #77B82A;
+}
+
+.telegram-link {
+    position: fixed;
+    left: 70px;
+    bottom: 60px;
+    z-index: 4;
+}
+
+.phone-link {
+    position: fixed;
+    right: 70px;
+    bottom: 60px;
+    z-index: 4;
+}
+
+.telegram-link div, 
+.phone-link div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram-link div {
+    background-color: rgba(51, 153, 255, 0.8);
+}
+
+.phone-link div {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+.telegram-link div img {
+    width: 30px;
+    /* height: 100%; */
 }

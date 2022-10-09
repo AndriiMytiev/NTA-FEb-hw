@@ -1,0 +1,226 @@
+.about {
+    background: url('../images/main/about-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 120px 0 80px;
+}
+
+.about-inner{
+    display: flex;
+}
+
+.about-content {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.section-title {
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 66px;
+    max-width: 100%;
+    position: relative;
+}
+
+.about .section-title {
+    max-width: 750px;
+}
+
+.add-title-line::after {
+    content: '';
+    position: absolute;
+    width: 103px;
+    height: 2px;
+    background-color: #77B82A;
+    transform: translateX(-32%);
+    bottom: 0;
+}
+
+.about-inner h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.about-teritory {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.about-teritory h5 {
+    line-height: 28px;
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.about-list-item {
+    list-style: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+  
+.about-list-item:last-child {
+    margin-bottom: 0;
+}
+  
+.about-list-item::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #77B82A;
+    left: 0;
+    top: 8px;
+}
+
+.about-info h4 {
+    margin: 40px 0 35px 0;
+}
+
+.about-info .info-text {
+    padding: 5px 0;
+    color: #000000;
+}
+
+.about-image {
+    width: 60%;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.about-image img {
+    width: 100%;
+}
+
+.gallery {
+    padding-top: 80px;
+}
+
+.gallery-row {
+    display: flex;
+}
+
+.gallery-element {
+    position: relative;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gallery-element img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-content { 
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+    );
+    opacity: 0;
+    position: absolute;
+    z-index: 3;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.gallery-element:hover .gallery-content {
+    opacity: 1;
+}
+
+.gallery-subtitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFC50E;
+    margin-bottom: 30px;
+}
+  
+.gallery-text{
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;
+}
+
+.gallery-text::after{
+    content: '';
+    position: absolute;
+    background: url('../images/header/line.svg');
+    width: 264px;
+    height: 1px;
+    bottom: -20px;
+    transform: translateX(-60%);
+  }
+
+.gallery-size-btn {
+    width: 34px;
+    margin: 50px auto 0;
+}
+
+.building {
+    padding-top: 80px;
+}
+
+.partners {
+    padding: 80px 0;
+}
+
+.partners-img {
+    width: 100%;
+}
+
+.collab {
+    background: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img/https://smartandgreen.com.ua/wp-content/themes/your-clean-template-3/css/../images/colab-bg.png.webp) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0;
+}
+
+.collab .add-title-line::after {
+    transform: translateX(-120%);
+    bottom: -20%;
+}
+
+.collab-content {
+    padding: 40px 30px 47px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    max-width: 684px;
+    margin-left: auto;
+}
+
+.collab-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333;
+    margin-bottom: 40px;
+}
+
+.collab-link-btn {
+    padding: 14px 33px;
+    background-color: #FFC50E;
+    color: #333333;
+    border-radius: 2px; 
+}
+
+.collab-link-btn:hover {
+    background-color: #FF9900;
+    transition: 0.5s;
+}
