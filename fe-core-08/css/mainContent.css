@@ -137,7 +137,7 @@
     z-index: 3;
     padding: 50px 30px;
     box-sizing: border-box;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .gallery-element:hover .gallery-content {
@@ -176,6 +176,41 @@
 
 .building {
     padding-top: 80px;
+}
+
+.building-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.building-element {
+    display: flex;
+    height: 140px;
+    padding-right: 20px;
+}
+
+.building-element .element-caption {
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.building-element .element-caption .caption-title {
+    color: #999999;
+}
+
+.building-element .element-caption .caption-text {
+    color: #000000;
+}
+
+.building-element .element-image {
+    min-width: 85px;
+    height: 85px;
+    margin-right: 20px;
+}
+
+.building-element .element-image img {
+    width: 100%;
 }
 
 .partners {
@@ -222,5 +257,5 @@
 
 .collab-link-btn:hover {
     background-color: #FF9900;
-    transition: 0.5s;
+    transition: 0.3s;
 }

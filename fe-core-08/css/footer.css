@@ -1,12 +1,18 @@
 .footer {
     padding-top: 60px;
     background: #000000;
+    color: #cacaca;
 }
 
 .footer-inner {
-    /* display: flex; */
+    display: flex;
     padding-bottom: 25px;
 }
+
+.footer-content {
+    margin-right: 30px;
+    max-width: 300px;
+} 
 
 .footer-inner .contact-text {
     font-size: 16px;
@@ -32,7 +38,7 @@
 .footer-inner .contact-btn:hover {
     background-color: #ffc50e;
     color: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .footer-inner .location {
@@ -48,12 +54,84 @@
 }
 
 .location-item:first-child .location-title {
-    color: #ffc50e;
+    color: #FFC50E;
 }
 
-.location-item a {
+.location-item:last-child .location-title {
+    color: #77B82A;
+}
+
+.location-item p {
     font-size: 16px;
     line-height: 26px;
-    color: #cacaca;
     position: relative;
+}
+
+.location-text {
+    font-size: 16px;
+    line-height: 26px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.location-item:first-child .location-text::before {
+    content: '';
+    position: absolute;
+    background: url(../images/footer/location.svg);
+    width: 24px;
+    height: 24px;
+    left: 0;
+}
+
+.location-item:last-child .location-text::before {
+    content: '';
+    position: absolute;
+    background: url(../images/footer/location-green.svg);
+    width: 24px;
+    height: 24px;
+    left: 0;
+}
+
+.location-item:first-child {
+    padding-bottom: 19px;
+    margin-bottom: 16px;
+    border-bottom: 1px dashed #FFFFFF;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 54px;
+}
+
+.social-link {
+    width: 52px;
+    height: 52px;
+    background: rgba(255,255,255,0.1);  
+    border-radius: 50%;
+    border: 1px solid #77b82a;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link:hover {
+    background: #77b82a;
+    transition: 0.3s;
+}
+
+.footer-image {
+    max-width: 800px;
+}
+
+.footer-image img {
+    width: 100%;
+    height: 585px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 14px 0;
+    background: #171717;
 }

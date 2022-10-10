@@ -37,21 +37,25 @@
     margin-left: 46px;
 }
 
-
 .menu-burger-open:hover span {
     background-color: #FFC50E;
 }
 
-.menu-burger-open:focus ~ .menu {
+#open:target {
     visibility: visible;
     right: 0;
 }
 
-.menu-burger-open:focus ~ .menu-burger-close {
+/* .menu-burger-open:focus ~ .menu {
+    visibility: visible;
+    right: 0;
+} */
+
+/* .menu-burger-open:focus ~ .menu-burger-close {
     cursor: pointer;
     visibility: visible;
     right: 33px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menu-burger-close:focus ~ .menu {
@@ -64,7 +68,7 @@
     visibility: hidden;
     right: -100%;
     transition: 0.1s;
-}
+} */
 
 .burger-line-big {
     width: 38px;
@@ -89,32 +93,29 @@
     width: 543px;
     height: 100%;
     z-index: 5;
-    padding: 116px 0 98px 76px;
+    padding: 33px 33px 98px 76px;
     background: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menu-burger-close {
     background: transparent;
     border: none;
     display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    right: -100%;
-    top: 33px;
+    align-self: flex-end; 
     z-index: 3;
+    transition: 0.3s;
 }
 
 .menu-wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .menu-list {
     list-style: none;
+    margin-top: 83px;
 }
 
 .menu-item {
@@ -130,7 +131,7 @@
 .menu-item a:hover {
     color: #FFC50E;
     border-bottom: 1.5px solid #FFC50E;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menu-button {
@@ -150,7 +151,7 @@
 .menu-button:hover {
     background-color: #FFC50E;
     color: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 /* Middle block */
@@ -226,18 +227,18 @@
 .middle-link:first-child:hover {
     background-color: #FF9900;
     border: 1px solid #FF9900;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .middle-link:last-child:hover {
     background-color: #FFC50E;
     color: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .middle-link:last-child:hover svg * {
     fill: #000000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .middle-link svg {
@@ -274,12 +275,12 @@
 
 .middle-view-link:hover {
     color: #FFC50E;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .middle-view-link:hover svg * {
     fill: #FFC50E;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .middle-line {
