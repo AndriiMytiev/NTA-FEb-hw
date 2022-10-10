@@ -6,23 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main page</title>
     <style>
-        .form {
-            border: 3px ridge;
-            padding: 20px;
-            border-radius: 20px;
-            width: fit-content;
-            margin-left: 10%;
-            margin-right: 10%;
-            margin-top: 5%;    
+        .form-block {
             display: flex;
-            flex-flow: column;
+            justify-content: space-around;
         }
+
+        .form {
+            padding: 20px;
+            width: 600px;
+            border-radius: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
         #pages{
-            background-color: rgb(173, 195, 230)
+            background-color: rgb(173, 195, 230);
+            border: 1px solid rgb(123, 145, 230);
         }
+
         #code {
-            background-color: rgb(140, 226, 141)
+            background-color: rgb(140, 226, 141);
+            border: 1px solid rgb(90, 176, 141);
         }
+
         input {
             background-color: rgb(0, 85, 255);
             border: none;
@@ -33,75 +39,69 @@
             margin: 10px;
             cursor: pointer;
         }
-        .non-active {
-            background-color: gray; 
+
+        input:hover {
+            background-color: red;
+            transition: 0.3s;
         }
-        .split {
-            height: 100%;
-            width: 50%;
-            position: fixed;
-        }
-        .left {
-            left: 0;
-        }
-        .right {
-            right: 0;
-        }
+  
         .title {
             cursor: pointer;
             width: fit-content;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin: 50px auto;
             font-size: 40px;
         }
-        a {
+    
+        .title a {
             text-decoration: none;
             color: black;
+        }
+
+        .title a:hover {
+            border-bottom: 2px solid blue;
+            color: blue;
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
     <p class="title"><a href="https://github.com/AndriiMytiev/NTA-FEb-hw">NTA-FEb-hw</a></p>
-    <article>
-        <div class="split left">
-            <form class="form" id="pages">
-                <h2 align="center">Links to github pages</h2>
-                <div class="row">
-                    <input type="button" value="Lesson 1" onClick='location.href="/NTA-FEb-hw/fe-core-01/index.html"'>
-                    <input type="button" value="Lesson 2" onClick='location.href="/NTA-FEb-hw/fe-core-02/index.html"'>
-                    <input type="button" value="Lesson 3" onClick='location.href="/NTA-FEb-hw/fe-core-03/index.html"'>
-                </div>
-                <div class="row">
-                    <input type="button" value="Lesson 4" onClick='location.href="/NTA-FEb-hw/fe-core-04/index.html"'>
-                    <input type="button" value="Lesson 5" onClick='location.href="/NTA-FEb-hw/fe-core-05/index.html"'>
-                    <input type="button" value="Lesson 6" onClick='location.href="/NTA-FEb-hw/fe-core-06/index.html"'>
-                </div>
-                <div class="row">
-                    <input type="button" value="Lesson 7" onClick='location.href="/NTA-FEb-hw/fe-core-07/index.html"'>
-                    <input type="button" value="Lesson 8" onClick='location.href="/NTA-FEb-hw/fe-core-08/index.html"'>
-                </div>
-           </form>
-        </div>
-        <div class="split right">
-            <form class="form" id="code">
-                <h2 align="center">Links to the repository with the code</h2>
-                <div class="row">
-                    <input type="button" value="Lesson 1" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-01"'>
-                    <input type="button" value="Lesson 2" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-02"'>
-                    <input type="button" value="Lesson 3" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-03"'>
-                </div>
-                <div class="row">
-                    <input type="button" value="Lesson 4" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-04"'>
-                    <input type="button" value="Lesson 5" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-05"'>
-                    <input type="button" value="Lesson 6" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-06"'>
-                </div>
-                <div class="row">
-                    <input type="button" value="Lesson 7" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-07"'>
-                    <input type="button" value="Lesson 8" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-08"'>
-                </div>
-            </form>    
-        </div>
-    </article>
+    <div class="form-block">
+        <form class="form" id="pages">
+            <h2>Links to github pages</h2>
+            <div class="row">
+                <input type="button" value="Lesson 1" onClick='location.href="/NTA-FEb-hw/fe-core-01/index.html"'>
+                <input type="button" value="Lesson 2" onClick='location.href="/NTA-FEb-hw/fe-core-02/index.html"'>
+                <input type="button" value="Lesson 3" onClick='location.href="/NTA-FEb-hw/fe-core-03/index.html"'>
+            </div>
+            <div class="row">
+                <input type="button" value="Lesson 4" onClick='location.href="/NTA-FEb-hw/fe-core-04/index.html"'>
+                <input type="button" value="Lesson 5" onClick='location.href="/NTA-FEb-hw/fe-core-05/index.html"'>
+                <input type="button" value="Lesson 6" onClick='location.href="/NTA-FEb-hw/fe-core-06/index.html"'>
+            </div>
+            <div class="row">
+                <input type="button" value="Lesson 7" onClick='location.href="/NTA-FEb-hw/fe-core-07/index.html"'>
+                <input type="button" value="Lesson 8" onClick='location.href="/NTA-FEb-hw/fe-core-08/index.html"'>
+            </div>
+       </form>
+
+       <form class="form" id="code">
+            <h2>Links to the repository with the code</h2>
+            <div class="row">
+                <input type="button" value="Lesson 1" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-01"'>
+                <input type="button" value="Lesson 2" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-02"'>
+                <input type="button" value="Lesson 3" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-03"'>
+            </div>
+            <div class="row">
+                <input type="button" value="Lesson 4" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-04"'>
+                <input type="button" value="Lesson 5" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-05"'>
+                <input type="button" value="Lesson 6" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-06"'>
+            </div>
+            <div class="row">
+                <input type="button" value="Lesson 7" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-07"'>
+                <input type="button" value="Lesson 8" onClick='location.href="https://github.com/AndriiMytiev/NTA-FEb-hw/tree/main/fe-core-08"'>
+            </div>
+        </form>    
+    </div>
 </body>
 </html>
