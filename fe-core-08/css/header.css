@@ -287,39 +287,3 @@
     fill: #77B82A;
 }
 
-.telegram-link {
-    position: fixed;
-    left: 70px;
-    bottom: 60px;
-    z-index: 4;
-}
-
-.phone-link {
-    position: fixed;
-    right: 70px;
-    bottom: 60px;
-    z-index: 4;
-}
-
-.telegram-link div, 
-.phone-link div {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.telegram-link div {
-    background-color: rgba(51, 153, 255, 0.8);
-}
-
-.phone-link div {
-    background-color: rgba(0, 255, 0, 0.8);
-}
-
-.telegram-link div img {
-    width: 30px;
-    /* height: 100%; */
-}
