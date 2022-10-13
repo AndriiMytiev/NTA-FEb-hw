@@ -46,30 +46,6 @@
     right: 0;
 }
 
-/* .menu-burger-open:focus ~ .menu {
-    visibility: visible;
-    right: 0;
-} */
-
-/* .menu-burger-open:focus ~ .menu-burger-close {
-    cursor: pointer;
-    visibility: visible;
-    right: 33px;
-    transition: 0.3s;
-}
-
-.menu-burger-close:focus ~ .menu {
-    visibility: hidden;
-    right: -100%;
-}
-
-.menu-burger-close:focus ~ .menu-burger-close {
-    cursor: default;
-    visibility: hidden;
-    right: -100%;
-    transition: 0.1s;
-} */
-
 .burger-line-big {
     width: 38px;
     height: 2px;
@@ -255,7 +231,6 @@
     padding-right: 76px;
     position: relative;
 }
-
 
 .middle-view-link svg:first-child {
     position: absolute;
