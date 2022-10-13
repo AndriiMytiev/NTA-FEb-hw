@@ -166,7 +166,8 @@
     width: 264px;
     height: 1px;
     bottom: -20px;
-    transform: translateX(-60%);
+    left: 50%;
+    margin-left: -132px;
   }
 
 .gallery-size-btn {
