@@ -281,10 +281,6 @@
     padding: 10px;
 }
 
-.middle-bottom-element svg * {
-    fill: white;
-}
-
 .middle-bottom-element:hover svg * {
     fill: #77B82A;
 }
