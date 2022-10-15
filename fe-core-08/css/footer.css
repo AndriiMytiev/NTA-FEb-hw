@@ -6,37 +6,48 @@
 
 .telegram-link {
     position: fixed;
-    left: 70px;
-    bottom: 60px;
+    left: 55px;
+    bottom: 45px;
     z-index: 4;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .phone-link {
     position: fixed;
-    right: 70px;
-    bottom: 60px;
+    right: 55px;
+    bottom: 45px;
     z-index: 4;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.telegram-link div, 
-.phone-link div {
+.telegram-link-main, 
+.phone-link-main {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
-.telegram-link div {
+.telegram-link-main {
     background-color: rgba(51, 153, 255, 0.8);
 }
 
-.phone-link div {
+.phone-link-main {
     background-color: rgba(0, 255, 0, 0.8);
 }
 
-.telegram-link div img {
+.telegram-link-main img {
     width: 30px;
     /* height: 100%; */
 }
@@ -172,3 +183,68 @@
     padding: 14px 0;
     background: #171717;
 }
+
+/* Animation */
+.add-circle-before, 
+.add-circle-after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telegram-link .add-circle-before {
+    animation: before 3s infinite ease;
+    background-color: rgba(52, 86, 255, 0.4);
+}
+
+.telegram-link .add-circle-after {
+    animation: after 3s infinite ease;
+    background-color: rgba(52, 86, 255, 0.2);
+} 
+
+.phone-link .add-circle-before {
+    animation: before 3s infinite ease;
+    background-color: rgba(119, 184, 42, 0.4);
+}
+
+.phone-link .add-circle-after {
+    animation: after 3s infinite ease;
+    background-color: rgba(119, 184, 42, 0.2);
+} 
+
+@keyframes before {
+    from {
+        width: 60px;
+        height: 60px;
+    }
+    50% {
+        width: 80px;
+        height: 80px;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@keyframes after{
+    from {
+        width: 60px;
+        height: 60px;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+    }
+}
+
