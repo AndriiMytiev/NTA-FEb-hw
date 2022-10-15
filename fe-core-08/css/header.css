@@ -208,8 +208,12 @@
 
 .middle-link:last-child:hover {
     background-color: #FFC50E;
-    color: #000000;
+    color: #000000 !important;
     transition: 0.3s;
+}
+
+.middle-link:last-child:visited {
+    color: #FFC50E;
 }
 
 .middle-link:last-child:hover svg * {
