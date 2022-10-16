@@ -1,0 +1,97 @@
+.header {
+    background: url(../images/header-bg.jpg) no-repeat;
+    /* max-width: 100%;  */
+    /* height: auto; */
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.container-slider {
+	width:100%;
+	margin:auto;
+	background: rgba(0,0,0,0.2);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    padding: 0 20px;
+}
+
+.header-logo img {
+    width: 100%;
+}
+
+.header-navbar li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.header-navbar li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+    font-family: "League Gothic";
+}
+
+.header-navbar .active {
+    border-bottom: 2px solid #edbfff;
+}
+
+.header-slider .slide {
+    display: flex;
+}
+
+.header-slider .slide-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 100px;
+    width: 490px;
+    box-sizing: border-box;
+}
+
+.header-slider .slide-text h1{
+	color:#ffffff;
+	font-family: "League Gothic";
+	font-size: 66px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.header-slider .slide-text h2{
+	color:#edbfff;
+	font-family: "League Gothic";
+	font-size: 50px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	text-transform: uppercase;
+}
+
+.header-slider .slide-text p{
+	color:#ffffff;
+	font-family: "Nunito Sans";
+	font-size: 20px;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	line-height: 1.2;
+}
+
+.header-slider .slide-img {
+    margin-left: auto;
+    padding: 0 100px;
+    cursor: pointer;
+}
+
+.bx-wrapper{
+	background: transparent!important;
+	border:5px solid transparent!important;
+	box-shadow: none!important;
+}
