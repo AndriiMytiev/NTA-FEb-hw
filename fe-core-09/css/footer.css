@@ -1,0 +1,41 @@
+.footer{
+	background: url(../images/footer-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.footer-menu {
+	display:flex;
+    align-items: center;
+    justify-content: space-between;
+	padding: 20px;
+}
+
+.footer-menu ul {
+	display:flex;
+}
+
+.footer-menu ul li {
+	padding: 30px;
+}
+
+.footer-menu ul li a {
+	font-size: 30px;
+	text-transform: uppercase;
+	color:#ffffff;
+	font-family: "League Gothic";
+	text-decoration: none;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.design a {
+	font-family:"Nunito Sans";
+	font-size: 18px;
+	color:#ffffff;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+
+.design span{
+	font-weight: bold;
+}

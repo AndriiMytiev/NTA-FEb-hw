@@ -12,7 +12,7 @@
     margin: auto;
 }
 
-.container-slider {
+.header-slider-block {
 	width:100%;
 	margin:auto;
 	background: rgba(0,0,0,0.2);
@@ -90,7 +90,7 @@
     cursor: pointer;
 }
 
-.bx-wrapper{
+.header-slider-block .bx-wrapper{
 	background: transparent!important;
 	border:5px solid transparent!important;
 	box-shadow: none!important;

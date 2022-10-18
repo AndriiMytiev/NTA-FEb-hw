@@ -1,0 +1,109 @@
+.about-company {
+	background: linear-gradient(to top, #35273c, #765283);
+}
+
+.about-content {
+	display: flex;
+	justify-content: space-between;
+	color:#ffffff;
+	padding: 20px;
+}
+
+.about-content .content-block h2 {
+	color:#ffffff;
+	font-family: "League Gothic";
+	font-size: 44px;
+	padding: 50px 50px 0 50px;
+	text-transform: uppercase;
+    position: relative;
+}
+
+.about-content .content-block p {
+	color:#ffffff;
+	font-family: "Nunito Sans";
+	font-size: 18px;
+	line-height: 1.6;
+	padding: 20px 50px 50px 50px; 
+}
+
+.read-more {
+	color:#ffffff;
+	font-family: "League Gothic";
+	font-size: 24px;
+	text-transform: uppercase;
+	float:right;
+	padding: 0 100px 50px 0;
+	cursor:pointer;
+}
+
+.read-more:hover {
+    text-shadow: 1px 0px 10px rgba(255, 255, 255, 1);
+}
+
+.about-content .title-icon {
+    position: absolute;
+    left: -10px;
+}
+
+.logo-slider .slide {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-slider .slide.add-more-padding {
+    padding: 61.5px 40px;
+}
+
+.logo-slider-block .bx-wrapper {
+    margin: 0 auto;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background: transparent!important;
+	border:5px solid transparent!important;
+	box-shadow: none!important;
+}
+
+.comments {
+    background: #ececec;
+}
+
+.comments-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments-content .content-element {
+    padding: 50px 30px;
+}
+
+.comments-content .content-element .element-title {
+    font-family: "League Gothic";
+	font-size: 50px;
+	text-transform: uppercase;
+	color:#454545;
+}
+
+.comments-content .content-element:first-child .element-title {
+    font-size: 66px;
+}
+
+.comments-content .content-element .element-title span {
+    color:#c9c9c9;
+}
+
+.comments-content .element-text {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    line-height: 1.4;
+    color:#454545;
+}
+
+.comments-content .copyright {
+	font-family: "Nunito Sans";
+	font-size: 18px;
+	line-height: 1.4;
+	color:#454545;
+	font-style: italic;
+}
