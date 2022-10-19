@@ -7,6 +7,13 @@ $(document).ready(function(){
         speed: 1000
     });
 
+    $('.main-content-slider').bxSlider({
+        auto: true,
+        controls: false,
+        responsive: true,
+        speed: 1000,
+    });
+
     $('.logo-slider').bxSlider({
         auto: true,
         controls: false,
@@ -19,3 +26,5 @@ $(document).ready(function(){
         slideWidth: 160
     });
 });
+
+// 
