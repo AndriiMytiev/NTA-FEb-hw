@@ -92,16 +92,12 @@
     color: rgba(140, 140, 140, 1);
 }
 
-.discount-form input:nth-child(1) {
-    content: "";
-    background: url("../image/input-icon-1.svg") no-repeat 25px 10px;
-    background-color: #ffffff;
+.discount-form input:nth-child(1)::placeholder {
+    background: url("../image/input-icon-1.svg") no-repeat 25px;
 }
 
-.discount-form input:nth-child(2) {
-    content: "";
-    background: url("../image/input-icon-2.svg") no-repeat 25px 10px;
-    background-color: #ffffff;
+.discount-form input:nth-child(2)::placeholder  {
+    background: url("../image/input-icon-2.svg") no-repeat 25px;
 }
 
 .discount-form button {
