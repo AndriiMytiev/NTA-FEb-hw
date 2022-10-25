@@ -6,6 +6,11 @@
     padding-bottom: 100px;
 }
 
+.aboutUs-image {
+    max-width: 602px;
+    width: 100%;
+}
+
 .about-title h2 {
     text-transform: uppercase;
     font-family: "ArticaPro-Bold";
