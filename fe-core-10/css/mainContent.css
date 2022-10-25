@@ -1,0 +1,50 @@
+.mainContent {
+    background-color: #000000;
+}
+
+.aboutUs {
+    padding-bottom: 100px;
+}
+
+.about-title h2 {
+    text-transform: uppercase;
+    font-family: "ArticaPro-Bold";
+    color: rgba(220, 173, 85, 1);  
+}
+
+.about-line {
+    height: 3px;
+    width: 70%;
+    background-color: #ffffff;
+    border: 0;
+    display: none;
+}
+
+.about-text {
+    max-width: 550px;
+    width: 100%;
+}
+
+.about-text p {
+    font-size: 1.25rem;
+    font-family: "Opensans-Light";
+}
+
+.section-line {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border: 0;
+    display: none;
+}
+
+.infoBlock-title h2 {
+    text-transform: uppercase;
+    font-family: "ArticaPro-Bold";
+    color: rgba(220, 173, 85, 1);  
+}
+
+.infoBlock-text p {
+    font-family: "Roboto";
+    font-size: 1.25rem;
+}

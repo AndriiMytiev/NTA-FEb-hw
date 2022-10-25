@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto.regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("roboto.light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medim";
+  src: url("roboto.medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+    
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("roboto.bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+    
