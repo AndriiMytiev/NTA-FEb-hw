@@ -2,7 +2,10 @@
     background: url(../image/header-bg.png)repeat;
     background-size: cover;
     background-position: center center;
-    /* padding-bottom: 50px; */
+}
+
+.header .container-wrapper {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .header-text h3 {
@@ -43,7 +46,7 @@
 .discount {
     position: relative;
     width: 100%;
-    height: 350px;
+    padding: 40px 0;
     background: linear-gradient(97.98deg, #DCAD55 26.48%, #A78B58 89.9%);
     border-top: 6px solid white;
     border-bottom: 6px solid white;
@@ -58,7 +61,6 @@
     height: 3px;
     background-color: white;
     transform: skewY(3.6deg);
-    display: none;
 }
 
 .discount .container {
@@ -113,4 +115,43 @@
 .discount-form button:hover {
     border: 2px solid rgb(220, 173, 85);
     transition: 0.3s;
+}
+
+/* Media blocks */
+.header-middle.media-tablet {
+    display: none;
+}
+
+.header-middle.media-tablet img {
+    width: 130%;
+}
+
+.new-navbar .media-nav {
+    display: none;
+    position: absolute;
+    right: 100px;
+    font-size: 14px;
+    font-family: "MontserratAlternates-SemiBold";
+}
+
+.new-navbar .media-nav span {
+    font-family: "MontserratAlternates-Regular";
+}
+
+.discount.media-tablet {
+    display: none !important;
+}
+
+.discount.media-tablet .discount-form {
+    width: fit-content;
+    margin: auto;
+}
+
+.discount.media-tablet .discount-text h3:first-child{
+    font-family: "ArticaPro-Bold";
+}
+
+.discount.media-tablet .discount-text h3:last-child{
+    font-family: "MontserratAlternates-Bold";
+    text-transform: uppercase;
 }

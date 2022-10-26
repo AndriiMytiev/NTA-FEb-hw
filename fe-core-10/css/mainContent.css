@@ -1,5 +1,5 @@
 .mainContent {
-    background-color: #000000;
+    background-color: #1e1e1e;
 }
 
 .aboutUs {
@@ -22,7 +22,6 @@
     width: 70%;
     background-color: #ffffff;
     border: 0;
-    display: none;
 }
 
 .about-text {
@@ -40,10 +39,9 @@
     height: 3px;
     background-color: #ffffff;
     border: 0;
-    display: none;
 }
 
-.infoBlock-title h2 {
+.section-title h2 {
     text-transform: uppercase;
     font-family: "ArticaPro-Bold";
     color: rgba(220, 173, 85, 1);  
@@ -52,4 +50,144 @@
 .infoBlock-text p {
     font-family: "Roboto";
     font-size: 1.25rem;
+}
+
+.infoBlock-table {
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 115px;
+}
+
+.infoBlock-table .column-element {
+    width: 300px;
+    min-height: 115px;
+    max-height: fit-content;
+    border: 3px solid rgba(220, 173, 85, 1);
+    padding: 15px 25px;
+    margin-bottom: 22px;
+}
+
+.infoBlock-table .element-text {
+    width: 180px;
+    margin-left: auto;
+}
+
+.infoBlock-table .element-text p {
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.infoBlock-table .table-column.left,
+.infoBlock-table .table-column.center {
+    margin-right: 55px;
+}
+
+.infoBlock-table .table-column.right {
+    margin-top: -30px;
+}
+
+.courses {
+    background-color: black;
+    padding: 100px 0;
+    transform: skewY(3.6deg);
+}
+
+.courses-container {
+    transform: skewY(-3.6deg);
+}
+
+.courses .container {
+    padding-top: 80px;
+}
+
+.courses .btn-wrapper {
+    margin-bottom: 40px;
+}
+
+.courses .btn-wrapper a:hover {
+    text-decoration: none;
+}
+
+.courses .btn-wrapper .button {
+    width: 215px !important;
+    height: 44px !important;
+    border: 4px solid rgb(220, 173, 85);
+    color: rgb(220, 173, 85);
+    font-family: "OpenSans-Bold";
+}
+
+.courses .btn-wrapper .button.active {
+    background-color: rgb(220, 173, 85);
+    color: #000000;
+    box-shadow: 0 0 15px 5px rgb(220, 173, 85);
+}
+
+.courses .note {
+    font-family: "OpenSans-SemiBold";
+    margin-bottom: 55px;
+}
+
+.courses .card-element {
+    background-color: #ffffff;
+    height: fit-content;
+}
+
+.courses .element-title {
+    padding: 10px 0;
+    font-family: "ArticaPro-Black";
+}
+
+.courses .element-content {
+    background: #1B1B1B;
+    border: 4px solid #F5F5F5;
+    padding: 40px 20px 0 20px;
+}
+
+.courses .element-content .card-button {
+    padding: 10px 70px;
+    background: #DCAD55;
+    border: 3px solid #FFFFFF;
+    font-family: "OpenSans-Bold";
+    color: #000000;
+}
+
+.courses .element-content a:hover {
+    text-decoration: none;
+}
+
+.courses .element-content .signature {
+    opacity: 0.5;
+}
+
+/* Media blocks */
+.aboutUs.media-tablet {
+    display: none;
+    padding-bottom: 50px;
+}
+
+.infoBlock-table.media-tablet {
+    display: none !important;
+}
+
+.section-title.media-tablet {
+    display: none;
+}
+
+.section-title.media-tablet h2 {
+    width: 45%;
+}
+
+.section-title.media-tablet .section-line {
+    position: absolute;
+    width: 65%;
+    right: 0;
+    bottom: 10px;
+}
+
+.courses .section-title.media-tablet h2 {
+    width: 20%;
+}
+
+.courses .btn-wrapper.media-tablet {
+    display: none !important;
 }

@@ -1,0 +1,74 @@
+@media (max-width: 425px) {
+    
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .header-middle.media-main {
+        display: none;
+    }
+
+    .header-middle.media-tablet {
+        display: flex;
+    }
+
+    .new-navbar .media-nav {
+        display: block;
+    }
+
+    .discount.media-main {
+        display: none !important;
+    }
+
+    .discount.media-tablet {
+        display: block !important;
+    }
+
+    .aboutUs.media-main {
+        display: none;
+    }
+
+    .aboutUs.media-tablet {
+        display: block !important;
+    } 
+
+    .infoBlock-table.media-main {
+        display: none !important; 
+    }
+
+    .infoBlock-table.media-tablet {
+        display: flex !important; 
+    }
+
+    .section-title.media-main {
+        display: none;
+    } 
+
+    .section-title.media-tablet {
+        display: block;
+    }
+
+    .infoBlock-text {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    .infoBlock-text p {
+        padding: 0 !important;
+    }
+    
+    .infoBlock-table {
+        padding-bottom: 50px ;
+    }
+
+    .courses {
+        background-color: transparent;
+    }
+
+    .courses .btn-wrapper.media-main {
+        display: none !important;
+    }
+
+    .courses .btn-wrapper.media-tablet {
+        display: flex !important;
+    }
+}

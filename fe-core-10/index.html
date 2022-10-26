@@ -8,39 +8,46 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mainContent.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./fonts/artica-pro/articapro.css">
     <link rel="stylesheet" href="./fonts/opensans/opensans.css">
     <link rel="stylesheet" href="./fonts/roboto/roboto.css">
+    <link rel="stylesheet" href="./fonts/montserratalternates/montserratalternates.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light new-navbar">
-                <a class="navbar-brand" href="#">
-                    <img src="./image/header-logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon bg-dark"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                  <ul class="navbar-nav new-navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white mx-5" href="#"> Головна <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary mx-5" href="#"> Курси </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary mx-5" href="#"> Викладачі </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-secondary ml-5" href="#"> Блог </a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
+        <div class="container-wrapper">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light new-navbar">
+                    <a class="navbar-brand" href="#">
+                        <img src="./image/header-logo.png" alt="logo">
+                    </a>
+                    <a class="text-white media-nav" href="#">+380990500796 <span>Анастасія</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon bg-dark"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                      <ul class="navbar-nav new-navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white mx-5" href="#"> Головна <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary mx-5" href="#"> Курси </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary mx-5" href="#"> Викладачі </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-secondary ml-5" href="#"> Блог </a>
+                        </li>
+                      </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
 
-            <div class="row text-white">
+        <div class="container">
+            <div class="row text-white header-middle media-main">
                 <div class="col-sm-7">
                     <img src="./image/FamilyGroup.png" alt="family" class="w-100">
                 </div>
@@ -76,8 +83,45 @@
                 </div>
             </div>
         </div>
-        <section class="discount d-flex align-items-center">
-            <div class="line d-md-block"></div>
+
+        <div class="text-white header-middle media-tablet ">
+            <div>
+                <img src="./image/media/tablet/familygroup-tablet.png" alt="family">
+            </div>
+
+            <div class="header-text pr-5 pt-5">
+                <h3>arni education</h3>
+                <h1 class="display-4">Онлайн-школа</h1>
+                <h3>номер 1 в Україні</h3>
+
+                <ul class="my-4">
+                    <li><h3>Найкращі викладачі</h3></li>
+                    <li><h3>Якісна освіта</h3></li>
+                    <li><h3>Навчання онлайн із будь-якої точки світу</h3></li>
+                </ul>
+                
+                <h2 class="mb-4">Два уроки за ціної одного при першій оплаті</h2>
+
+                <div class="header-button d-flex justify-content-center align-items-center">
+                    <p class="text-center w-50 m-0">Отримати другий урок у подарунок</p>
+                    <svg class="ml-4" width="26" height="28" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_206_264)">
+                        <path d="M24.3044 5.45466H22.4118C22.6614 5.02919 22.8262 4.5516 22.8731 4.04651C23.0232 2.4323 22.2338 0.985269 20.8899 0.34373C19.6546 -0.245966 18.2664 -0.00490306 17.2667 0.971488L14.877 3.30391C14.4116 2.75572 13.7425 2.41119 13 2.41119C12.2562 2.41119 11.586 2.75682 11.1205 3.3067L8.72772 0.971214C7.72647 -0.00517645 6.33882 -0.245309 5.10407 0.344058C3.7605 0.985652 2.97096 2.43317 3.12147 4.04733C3.16855 4.55204 3.33318 5.02941 3.58277 5.45466H1.69564C0.759129 5.45466 0 6.27224 0 7.28073L0 10.0199C0 10.5241 0.37959 10.9329 0.847844 10.9329L25.1522 10.9329C25.6204 10.9329 26 10.5241 26 10.0199V7.28073C26 6.27224 25.2409 5.45466 24.3044 5.45466ZM10.4565 5.15032V5.45466H6.46801C5.4142 5.45466 4.58484 4.39668 4.84804 3.2151C4.96397 2.69475 5.31273 2.25118 5.76382 2.02663C6.38325 1.7183 7.06941 1.81728 7.58966 2.3244L10.4572 5.12342C10.4571 5.13244 10.4565 5.1413 10.4565 5.15032ZM21.1907 3.80408C21.1275 4.75307 20.3315 5.45477 19.4481 5.45477H15.5435V5.15043C15.5435 5.13966 15.5429 5.12899 15.5428 5.11822C16.1924 4.48407 17.6016 3.10857 18.3659 2.36246C18.8003 1.93847 19.4081 1.74056 19.9699 1.92103C20.7762 2.18003 21.2497 2.91842 21.1907 3.80408Z" fill="#B09157"/>
+                        <path d="M1.69531 12.7578L1.69531 26.1491C1.69531 27.1577 2.45444 27.9752 3.39095 27.9752H11.304V12.7578H1.69531Z" fill="#B09157"/>
+                        <path d="M14.6953 12.7578V27.9752H22.6084C23.5449 27.9752 24.304 27.1577 24.304 26.1491V12.7578H14.6953Z" fill="#B09157"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_206_264">
+                        <rect width="26" height="28" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <section class="discount media-main d-flex align-items-center">
+            <div class="line"></div>
             <div class="container d-flex justify-content-center">
                 <div class="row">
                     <div class="col-sm-6 discount-text mb-3 pt-4">
@@ -93,10 +137,25 @@
                 </div>
             </div>
         </section>
+
+        <section class="discount media-tablet d-flex align-items-center">
+            <div class="container">
+                <div class="discount-text mb-3 pt-4 w-100 text-center">
+                    <h3 class="m-0">Два уроки за ціною одного</h3>
+                    <h3>при першій оплаті</h3>
+                </div>
+
+                <div class="discount-form d-flex flex-column">
+                    <input type="text" class="mb-3 first" placeholder="Ваше ім'я" />
+                    <input type="text" class="mb-3 last" placeholder="+38 (ХХ) XX - XX - XXX" />
+                    <button type="button" class="mb-3"><h5 class="m-0">Запитати</h5></button>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main class="mainContent">
-        <section class="aboutUs">
+        <section class="aboutUs media-main">
             <div class="row m-0">
                 <div class="col-sm-5 pl-0">
                     <img src="./image/Intersect.png" alt="Intersect" class="aboutUs-image float-right">
@@ -104,7 +163,7 @@
                 <div class="col-sm-7 pr-0 pl-sm-5 d-flex flex-column justify-content-center">
                     <div class="about-title mb-3 d-flex align-items-center justify-content-between">
                         <h2>хто ми?</h2>
-                        <div class="about-line d-md-block"></div>
+                        <div class="about-line"></div>
                     </div>
                     <div class="about-text pr-3 text-white">
                         <p>
@@ -118,10 +177,38 @@
             </div>
         </section>
 
+        <section class="aboutUs media-tablet">
+            <div class="row m-0">
+                <div class="col-sm-5 pl-0">
+                    <img src="./image/media/tablet/Intersect-tablet.png" alt="Intersect" class="aboutUs-image float-right">
+                </div>
+                <div class="col-sm-7 pr-0 pl-sm-5 d-flex flex-column justify-content-center">
+                    <div class="about-title mb-3 d-flex align-items-center justify-content-between">
+                        <h2>хто ми?</h2>
+                        <div class="about-line w-50"></div>
+                    </div>
+                    <div class="about-text pr-5 text-white">
+                        <p class="pr-5 pt-4">
+                            ARNI EDUCATION – це онлайн-школа з найкращими професійними викладачами, 
+                            з індивідуально розробленою програмою під кожного учня. 
+                        </p>
+
+                        <p class="pr-5"> 
+                            Наші фахівці винайшли унікальну систему навчання. 
+                        </p>
+
+                        <p class="pr-5">
+                            Наша головна мета – Ваш результат.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="infoBlock">
-            <div class="row infoBlock-title m-0">
+            <div class="row section-title m-0 media-main">
                 <div class="col-sm-3 px-0 d-flex align-items-center">
-                    <div class="section-line d-md-block"></div>
+                    <div class="section-line"></div>
                 </div>
 
                 <div class="col-sm-6 d-flex align-items-center justify-content-center">
@@ -129,20 +216,283 @@
                 </div>
 
                 <div class="col-sm-3 px-0 d-flex align-items-center">
-                    <div class="section-line d-md-block"></div>
+                    <div class="section-line"></div>
                 </div>
+            </div>
+
+            <div class="section-title m-0 pl-5 media-tablet position-relative">
+                <h2>Вчитися онлайн — зручно!</h2>
+                <div class="section-line"></div>
             </div>
 
             <div class="container d-flex justify-content-center">
                 <div class="infoBlock-text text-md-center text-white px-md-5 py-5">
-                    <p class="px-md-5">
+                    <p class="px-5">
                         Навчання проходить онлайн на платформі ZOOM. Але це не просто начинка матеріалу, 
                         а живе спілкування викладача з учнями. Так само кожен може задати будь-які питання 
                         та гарантовано почує відповідь. Всі матеріали для навчання видаються онлайн безкоштовно 
                         і залишаються у вас назавжди.
                     </p>
                 </div>
-                
+            </div>
+
+            <div class="infoBlock-table text-white d-flex align-items-center media-main">
+                <div class="table-column left">
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon1.png" alt="icon1"> 
+                        <div class="element-text">
+                            <p class="m-0">Не витрачайте час на дорогу, відвідуйте онлайн-трансляції.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon2.png" alt="icon2"> 
+                        <div class="element-text">
+                            <p class="m-0">Заняття ніколи не припиняються - ми завжди онлайн.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon3.png" alt="icon3"> 
+                        <div class="element-text">
+                            <p class="m-0">Більше жодних пізніх повернень після відвідування репетитора.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-column center">
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon4.png" alt="icon4"> 
+                        <div class="element-text">
+                            <p class="m-0">Залишайтеся вдома. </p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon5.png" alt="icon5"> 
+                        <div class="element-text">
+                            <p class="m-0">Жодний урок не «згорить».</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-column right">
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon6.png" alt="icon6"> 
+                        <div class="element-text">
+                            <p class="m-0">Батьки хвилюються менше.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon7.png" alt="icon7"> 
+                        <div class="element-text">
+                            <p class="m-0">Гарантія повернення коштів.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon8.png" alt="icon8"> 
+                        <div class="element-text">
+                            <p class="m-0">
+                                Наші мененжери подбають, щоб ви не забули про свій 
+                                урок і нададуть будь-яку інформацію про навчання.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoBlock-table text-white align-items-start media-tablet">
+                <div class="table-column left">
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon1.png" alt="icon1"> 
+                        <div class="element-text">
+                            <p class="m-0">Не витрачайте час на дорогу, відвідуйте онлайн-трансляції.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon2.png" alt="icon2"> 
+                        <div class="element-text">
+                            <p class="m-0">Заняття ніколи не припиняються - ми завжди онлайн.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon7.png" alt="icon7"> 
+                        <div class="element-text">
+                            <p class="m-0">Гарантія повернення коштів.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon3.png" alt="icon3"> 
+                        <div class="element-text">
+                            <p class="m-0">Більше жодних пізніх повернень після відвідування репетитора.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-column right mt-0">
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon4.png" alt="icon4"> 
+                        <div class="element-text">
+                            <p class="m-0">Залишайтеся вдома. </p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon5.png" alt="icon5"> 
+                        <div class="element-text">
+                            <p class="m-0">Жодний урок не «згорить».</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon6.png" alt="icon6"> 
+                        <div class="element-text">
+                            <p class="m-0">Батьки хвилюються менше.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-element d-flex align-items-center">
+                        <img src="./image/infoBlock-icons/icon8.png" alt="icon8"> 
+                        <div class="element-text">
+                            <p class="m-0">
+                                Наші мененжери подбають, щоб ви не забули про свій 
+                                урок і нададуть будь-яку інформацію про навчання.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses">
+            <div class="courses-container">
+                <div class="row section-title m-0 media-main">
+                    <div class="col-sm-3 px-0 d-flex align-items-center">
+                        <div class="section-line"></div>
+                    </div>
+    
+                    <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                        <h2>Наші Курси</h2>
+                    </div>
+    
+                    <div class="col-sm-3 px-0 d-flex align-items-center">
+                        <div class="section-line"></div>
+                    </div>
+                </div>
+    
+                <div class="section-title m-0 pl-5 media-tablet position-relative">
+                    <h2>Наші Курси</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="container">
+                    <div class="btn-wrapper d-flex justify-content-center media-main">
+                        <a href="" class="mr-5">
+                            <div class="button active d-flex justify-content-center align-items-center">
+                                Англійська мова
+                            </div> 
+                        </a>
+
+                        <a href="" class="mr-5">
+                            <div class="button d-flex justify-content-center align-items-center">
+                                Математика
+                                <img src="./image/boy_icon.svg" alt="boy_icon" class="ml-2">
+                            </div> 
+                        </a>
+
+                        <a href="">
+                            <div class="button d-flex justify-content-center align-items-center">
+                                Німецька мова
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-center media-tablet">
+                        <a href="" class="mr-5">
+                            <div class="button active d-flex justify-content-center align-items-center">
+                                Англійська мова
+                            </div> 
+                        </a>
+
+                        <a href="" class="mr-5">
+                            <div class="button d-flex justify-content-center align-items-center">
+                                Математика
+                                <img src="./image/boy_icon.svg" alt="boy_icon" class="ml-2">
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-center media-tablet">
+                        <a href="">
+                            <div class="button d-flex justify-content-center align-items-center">
+                                Німецька мова
+                            </div> 
+                        </a>
+                    </div>
+
+                    <div class="note text-white text-center">
+                        <h4>
+                            <img src="./image/boy_icon-white.svg" alt="boy"> - курс створений тільки для дітей
+                        </h4>
+                    </div>
+
+                    <div class="cards-block d-flex justify-content-center">
+                        <div class="card-element mr-4">
+                            <div class="element-title d-flex justify-content-center">
+                                <h4 class="m-0">Групові заняття</h4>
+                            </div>
+
+                            <div class="element-content text-white">
+                                <div class="d-flex justify-content-center">
+                                    <div class="images mr-3">
+                                        <img src="./image/clock.png" alt="clock">
+                                        <br>
+                                        <img src="./image/money.png" alt="money">
+                                    </div>
+    
+                                    <div class="text mb-5">
+                                        <p class="m-0 mb-1">60 хв</p>
+                                        <p class="m-0">450 грн.</p>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="mb-4">
+                                    <div class="card-button mb-4">Записатись</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-element">
+                            <div class="element-title d-flex justify-content-center">
+                                <h4 class="m-0">Індивідуально</h4>
+                            </div>
+
+                            <div class="element-content text-white pt-4">
+                                <p class="text-center w-75 mx-auto mb-4 signature">з першокласним викладачем</p>
+                                <div class="d-flex justify-content-center">
+                                    <div class="images mr-3">
+                                        <img src="./image/clock.png" alt="clock">
+                                        <br>
+                                        <img src="./image/money.png" alt="money">
+                                    </div>
+    
+                                    <div class="text mb-5">
+                                        <p class="m-0  mb-1">60 хв</p>
+                                        <p class="m-0">500 грн.</p>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="mb-4">
+                                    <div class="card-button mb-4">Записатись</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
