@@ -2,6 +2,7 @@
     background: url(../image/header-bg.png)repeat;
     background-size: cover;
     background-position: center center;
+    margin-bottom: -30px;
 }
 
 .header .container-wrapper {
@@ -43,8 +44,14 @@
     transition: 0.3s;
 }
 
+.header-middle img {
+    width: 110%;
+    margin-left: -20px;
+}
+
 .discount {
     position: relative;
+    top: -25px;
     width: 100%;
     padding: 40px 0;
     background: linear-gradient(97.98deg, #DCAD55 26.48%, #A78B58 89.9%);
