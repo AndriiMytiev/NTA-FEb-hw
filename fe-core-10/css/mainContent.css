@@ -159,6 +159,145 @@
     opacity: 0.5;
 }
 
+.teachers {
+    padding: 120px 0;
+}
+
+.teachers .container {
+    padding-top: 120px;
+}
+
+.teacher-card {
+    background-color: #ffffff;
+    padding: 5px;
+    position: relative;
+}
+
+.teacher-card::before {
+    content: '';
+    width: 270px;
+    height: 7px;
+    background: rgba(227, 208, 171, 1);
+    position: absolute;
+    top: -7px;
+    left: 15px;
+}
+
+.teacher-card::after {
+    content: '';
+    width: 235px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.22);
+    position: absolute;
+    top: -17px;
+    left: 32.5px;
+}
+
+.teacher-card .card-text {
+    padding: 30px;
+}
+
+.teacher-card .card-text h4 {
+    font-family: "OpenSans-Bold";
+}
+
+.teacher-card .card-text h6 {
+    font-family: "OpenSans";
+}
+
+.teacher-card .card-text span {
+    font-family: "OpenSans-Bold";
+}
+
+.teacher-info {
+    margin-left: 150px;
+}
+
+.teachers .info-element {
+    width: 640px;
+}
+
+.teachers .element-text {
+    width: 510px;
+}
+
+.teachers .element-text p {
+    font-family: "OpenSans";
+    font-size: 16px;
+}
+
+.action {
+    background: linear-gradient(111.29deg, #DCAD55 19.8%, #8C6E36 80.97%);
+    padding: 100px 0 200px 0;
+    transform: skewY(3.6deg);
+    position: relative;
+}
+
+.action .section-title {
+    transform: skewY(-3.6deg);
+}
+
+.action .container {
+    transform: skewY(-3.6deg);
+}
+
+.action-content {
+    background-color: rgba(25, 25, 25, 1);
+    border: 3px solid rgba(255, 255, 255, 1);
+    height: 402px;
+    position: relative;
+    margin-top: 110px;
+}
+
+.action-content .media-main {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.action .media-tablet {
+    position: absolute;
+    bottom: -20px;
+    right: 0;  
+    z-index: 2;
+    transform: skewY(-3.6deg);
+    display: none;
+}
+
+.action-text {
+    width: 620px;
+    margin-left: auto;
+    padding: 100px 100px 100px 0 ;
+}
+
+.action-text h2 {
+    font-family: "ArticaPro-Black";
+}
+
+.action-text p {
+    color: #EAEAEA;
+}
+
+.action-content::before {
+    content: "";
+    width: 86%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.22);
+    position: absolute;
+    top: -23px;
+    left: 7%;
+}
+
+.action-content::after {
+    content: "";
+    width: 94%;
+    height: 10px;
+    background: #E3D0AB;
+    position: absolute;
+    top: -13px;
+    left: 3%;
+}
+
 /* Media blocks */
 .aboutUs.media-tablet {
     display: none;
