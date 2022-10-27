@@ -94,19 +94,21 @@
     width: 300px;
     height: 45px;
     border: 2px solid rgba(196, 196, 196, 1);
+    padding: 0 20px;
+    outline: none;
 }
 
 .discount-form input::placeholder {
-    padding-left: 60px;
+    padding-left: 40px;
     color: rgba(140, 140, 140, 1);
 }
 
 .discount-form input:nth-child(1)::placeholder {
-    background: url("../image/input-icon-1.svg") no-repeat 25px;
+    background: url("../image/input-icon-1.svg") no-repeat 10px;
 }
 
 .discount-form input:nth-child(2)::placeholder  {
-    background: url("../image/input-icon-2.svg") no-repeat 25px;
+    background: url("../image/input-icon-2.svg") no-repeat 10px;
 }
 
 .discount-form button {
