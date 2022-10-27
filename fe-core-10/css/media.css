@@ -120,4 +120,20 @@
     .action .media-tablet {
         display: block;
     }
+
+    .buy-courses .element-buttons {
+        flex-direction: column;
+    }
+
+    .buy-courses .element-buttons a:first-child {
+        margin-bottom: 30px;
+    }
+
+    .buy-courses .section-line {
+        width: 25%;
+    }
+
+    .reviews .section-line {
+        width: 40% !important;
+    }
 }
