@@ -27,3 +27,8 @@ $(document).ready(function() {
         slideWidth: 366
     });
 });
+
+window.onload = function () {
+    let preloader = document.getElementById('preloader');
+    preloader.classList.add('hide');
+}
