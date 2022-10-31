@@ -12,12 +12,18 @@
         }
 
         .form {
+            font-family: Arial, Helvetica, sans-serif;
             padding: 20px;
             width: 600px;
             border-radius: 20px;
             text-align: center;
             box-sizing: border-box;
         }
+
+        a {
+            text-decoration: none;
+        }
+
 
         #pages{
             background-color: rgb(173, 195, 230);
@@ -29,7 +35,7 @@
             border: 1px solid rgb(90, 176, 141);
         }
 
-        input {
+        input, .button {
             background-color: rgb(0, 85, 255);
             border: none;
             border-radius: 10px;
@@ -40,7 +46,13 @@
             cursor: pointer;
         }
 
-        input:hover {
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input:hover, .button:hover {
             background-color: red;
             transition: 0.3s;
         }
@@ -70,6 +82,9 @@
         <form class="form" id="pages">
             <h2>Links to github pages</h2>
             <div class="row">
+                <a href="/NTA-FEb-hw/fe-core-01/index.html">
+                    <div class="button">Lesson 1</div> 
+                </a>
                 <input type="button" value="Lesson 1" onClick='location.href="/NTA-FEb-hw/fe-core-01/index.html"'>
                 <input type="button" value="Lesson 2" onClick='location.href="/NTA-FEb-hw/fe-core-02/index.html"'>
                 <input type="button" value="Lesson 3" onClick='location.href="/NTA-FEb-hw/fe-core-03/index.html"'>
