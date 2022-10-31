@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arni</title>
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="./plugins/bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="./plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/mainContent.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./fonts/artica-pro/articapro.css">
     <link rel="stylesheet" href="./fonts/opensans/opensans.css">
@@ -390,47 +394,43 @@
                 </div>
 
                 <div class="container">
-                    <div class="btn-wrapper d-flex justify-content-center media-main">
-                        <a href="" class="mr-5">
-                            <div class="button active d-flex justify-content-center align-items-center">
-                                Англійська мова
-                            </div> 
+                    <div class="btn-wrapper d-flex justify-content-center media-main tab-nav">
+                        <a href="#english" class="mr-5 button active d-flex justify-content-center align-items-center">
+                            Англійська мова 
                         </a>
 
-                        <a href="" class="mr-5">
-                            <div class="button d-flex justify-content-center align-items-center">
-                                Математика
-                                <img src="./image/boy_icon.svg" alt="boy_icon" class="ml-2">
-                            </div> 
+                        <a href="#math" class="mr-5 button d-flex justify-content-center align-items-center">
+                            Математика
+                            <svg class="ml-2" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="29" height="29" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_522_584" transform="scale(0.00833333)"/>
+                                </pattern>
+                                <image id="image0_522_584" width="120" height="120" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
                         </a>
 
-                        <a href="">
-                            <div class="button d-flex justify-content-center align-items-center">
-                                Німецька мова
-                            </div> 
-                        </a>
-                    </div>
-
-                    <div class="btn-wrapper d-flex justify-content-center media-tablet">
-                        <a href="" class="mr-5">
-                            <div class="button active d-flex justify-content-center align-items-center">
-                                Англійська мова
-                            </div> 
-                        </a>
-
-                        <a href="" class="mr-5">
-                            <div class="button d-flex justify-content-center align-items-center">
-                                Математика
-                                <img src="./image/boy_icon.svg" alt="boy_icon" class="ml-2">
-                            </div> 
+                        <a href="#germany" class="button d-flex justify-content-center align-items-center">
+                            Німецька мова
                         </a>
                     </div>
 
-                    <div class="btn-wrapper d-flex justify-content-center media-tablet">
-                        <a href="">
-                            <div class="button d-flex justify-content-center align-items-center">
-                                Німецька мова
-                            </div> 
+                    <div class="btn-wrapper d-flex justify-content-center media-tablet tab-nav">
+                        <a href="#english" class="mr-5 button active d-flex justify-content-center align-items-center">
+                            Англійська мова
+                        </a>
+
+                        <a href="#math" class="mr-5 button d-flex justify-content-center align-items-center">
+                            Математика
+                            <img src="./image/boy_icon.svg" alt="boy" class="ml-2">
+                        </a>
+                    </div>
+
+                    <div class="btn-wrapper d-flex justify-content-center media-tablet tab-nav">
+                        <a href="#germany" class="button d-flex justify-content-center align-items-center">
+                            Німецька мова
                         </a>
                     </div>
 
@@ -440,58 +440,122 @@
                         </h4>
                     </div>
 
-                    <div class="cards-block d-flex justify-content-center">
-                        <div class="card-element mr-4">
-                            <div class="element-title d-flex justify-content-center">
-                                <h4 class="m-0">Групові заняття</h4>
-                            </div>
-
-                            <div class="element-content text-white">
-                                <div class="d-flex justify-content-center">
-                                    <div class="images mr-3">
-                                        <img src="./image/clock.png" alt="clock">
-                                        <br>
-                                        <img src="./image/money.png" alt="money">
+                    <div class="tabs-content">
+                        <div class="tab-pane faded in active" id="english">
+                            <div class="cards-block d-flex justify-content-center">
+                                <div class="card-element mr-4">
+                                    <div class="element-title d-flex justify-content-center">
+                                        <h4 class="m-0">Групові заняття</h4>
                                     </div>
-    
-                                    <div class="text mb-5">
-                                        <p class="m-0 mb-1">60 хв</p>
-                                        <p class="m-0">450 грн.</p>
+        
+                                    <div class="element-content text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="images mr-3">
+                                                <img src="./image/clock.png" alt="clock">
+                                                <br>
+                                                <img src="./image/money.png" alt="money">
+                                            </div>
+            
+                                            <div class="text mb-5">
+                                                <p class="m-0 mb-1">60 хв</p>
+                                                <p class="m-0">450 грн.</p>
+                                            </div>
+                                        </div>
+        
+                                        <a href="#" class="mb-4">
+                                            <div class="card-button mb-4">Записатись</div>
+                                        </a>
                                     </div>
                                 </div>
-
-                                <a href="#" class="mb-4">
-                                    <div class="card-button mb-4">Записатись</div>
-                                </a>
+        
+                                <div class="card-element">
+                                    <div class="element-title d-flex justify-content-center">
+                                        <h4 class="m-0">Індивідуально</h4>
+                                    </div>
+        
+                                    <div class="element-content text-white pt-4">
+                                        <p class="text-center w-75 mx-auto mb-4 signature">з першокласним викладачем</p>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="images mr-3">
+                                                <img src="./image/clock.png" alt="clock">
+                                                <br>
+                                                <img src="./image/money.png" alt="money">
+                                            </div>
+            
+                                            <div class="text mb-5">
+                                                <p class="m-0  mb-1">60 хв</p>
+                                                <p class="m-0">500 грн.</p>
+                                            </div>
+                                        </div>
+        
+                                        <a href="#" class="mb-4">
+                                            <div class="card-button mb-4">Записатись</div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="card-element">
-                            <div class="element-title d-flex justify-content-center">
-                                <h4 class="m-0">Індивідуально</h4>
-                            </div>
-
-                            <div class="element-content text-white pt-4">
-                                <p class="text-center w-75 mx-auto mb-4 signature">з першокласним викладачем</p>
-                                <div class="d-flex justify-content-center">
-                                    <div class="images mr-3">
-                                        <img src="./image/clock.png" alt="clock">
-                                        <br>
-                                        <img src="./image/money.png" alt="money">
+                        <div class="tab-pane faded" id="math">
+                            <div class="cards-block d-flex justify-content-center">
+                                <div class="card-element mr-4">
+                                    <div class="element-title d-flex justify-content-center">
+                                        <h4 class="m-0">Групові заняття</h4>
                                     </div>
-    
-                                    <div class="text mb-5">
-                                        <p class="m-0  mb-1">60 хв</p>
-                                        <p class="m-0">500 грн.</p>
+        
+                                    <div class="element-content text-white">
+                                        <div class="d-flex justify-content-center">
+                                            <div class="images mr-3">
+                                                <img src="./image/clock.png" alt="clock">
+                                                <br>
+                                                <img src="./image/money.png" alt="money">
+                                            </div>
+            
+                                            <div class="text mb-5">
+                                                <p class="m-0 mb-1">60 хв</p>
+                                                <p class="m-0">450 грн.</p>
+                                            </div>
+                                        </div>
+        
+                                        <a href="#" class="mb-4">
+                                            <div class="card-button mb-4">Записатись</div>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <a href="#" class="mb-4">
-                                    <div class="card-button mb-4">Записатись</div>
-                                </a>
+                        <div class="tab-pane faded" id="germany">
+                            <div class="cards-block d-flex justify-content-center">
+                                <div class="card-element">
+                                    <div class="element-title d-flex justify-content-center">
+                                        <h4 class="m-0">Індивідуально</h4>
+                                    </div>
+        
+                                    <div class="element-content text-white pt-4">
+                                        <p class="text-center w-75 mx-auto mb-4 signature">з першокласним викладачем</p>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="images mr-3">
+                                                <img src="./image/clock.png" alt="clock">
+                                                <br>
+                                                <img src="./image/money.png" alt="money">
+                                            </div>
+            
+                                            <div class="text mb-5">
+                                                <p class="m-0  mb-1">60 хв</p>
+                                                <p class="m-0">500 грн.</p>
+                                            </div>
+                                        </div>
+        
+                                        <a href="#" class="mb-4">
+                                            <div class="card-button mb-4">Записатись</div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
@@ -755,10 +819,179 @@
                 <h2 class="w-50">Що кажуть <br>про нас наші учні</h2>
                 <div class="section-line"></div>
             </div>
+
+            <div class="reviews-slider">
+                <div class="slide">
+                    <div class="slider-card ">
+                        <div class="card-title d-flex justify-content-center m-0">
+                            <h4 class="m-0">Белова Светлана</h4>
+                        </div>
+
+                        <div class="card-text text-white d-flex align-items-center">
+                            <p class="m-0">
+                                Очень крутая школа английского языка. Учителя правильно объясняют и обращают внимание на 
+                                каждого ребенка, что тоже интересно. И много новых знаний из уроков рекомендую!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slider-card ">
+                        <div class="card-title d-flex justify-content-center m-0">
+                            <h4 class="m-0">Белова Светлана</h4>
+                        </div>
+
+                        <div class="card-text text-white d-flex align-items-center">
+                            <p class="m-0">
+                                Задоволені Вашими заняттями! Дякуємо, що цікаво і доступно пояснюєте нашим дітям!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slider-card ">
+                        <div class="card-title d-flex justify-content-center m-0">
+                            <h4 class="m-0">Белова Светлана</h4>
+                        </div>
+
+                        <div class="card-text text-white d-flex align-items-center">
+                            <p class="m-0">
+                                Дуже задоволена навчанням, неймовірний підхід до учнів, чудовий викладач Альона! 
+                                Всім рекомендую) Налаштована моя дитина навчатися далі)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slider-card ">
+                        <div class="card-title d-flex justify-content-center m-0">
+                            <h4 class="m-0">Белова Светлана</h4>
+                        </div>
+
+                        <div class="card-text text-white d-flex align-items-center">
+                            <p class="m-0">
+                                Викладачі кваліфіковані спеціалісти ,в доступній формі пояснюють і 
+                                за короткий час вже є результат в освоєнні мови. Дякую.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slider-card ">
+                        <div class="card-title d-flex justify-content-center m-0">
+                            <h4 class="m-0">Белова Светлана</h4>
+                        </div>
+
+                        <div class="card-text text-white d-flex align-items-center">
+                            <p class="m-0">
+                                Випадково побачила рекламу на сторінці фейсбуку. 
+                                Дочка спочатку казала, що не хоче, але вже через тиждень занять-попросила подовжити навчання. 
+                                Вже займаємося два місяці і є результат і по розмові і граматиці. Дякуємо...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="reviews-button">
+                <div class="d-flex justify-content-center align-items-center">Почати вчитися</div> 
+            </a>
+        </section>
+
+        <section class="feedback"> 
+            <div class="container">
+                <div class="feedback-title m-0">
+                    Залишились питання?
+                </div>
+
+                <div class="feedback-text text-white">
+                    Ви можете задати своє запитання, скориставшись формою та гарантовано отримаєте відповідь протягом дня!
+                </div>
+
+                <div class="feedback-row d-flex justify-content-around">
+                    <div class="d-flex flex-column left-block align-items-end">
+                        <input type="text" placeholder="Ваше ім’я"/>
+                        <input type="email" placeholder="Електронна пошта"/>
+                        <input type="text" placeholder="Ваше питання"/>
+                        <a href="#" class="feedback-button d-flex align-items-center justify-content-center">Запитати поштою</a>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center center-block text-white">
+                        або
+                    </div>
+
+                    <div class="right-block d-flex align-items-end">
+                        <a href="#" class="feedback-button secondary d-flex align-items-center justify-content-center">Запитати у Вайбері</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-title m-0">
+                З нами можна зв’язатися
+            </div>
 
+            <div class="footer-content d-flex justify-content-around">
+                <div class="content-tablet d-none">
+                    <a href="#" class="footer-button d-flex align-items-center justify-content-center">Замовити дзвінок</a>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="circle d-flex align-items-center justify-content-center">
+                            <img src="./image/footer/phone.png" alt="phone">
+                        </div>
+
+                        <p class="m-0">+380990500796 Анастасія</p>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="circle d-flex align-items-center justify-content-center">
+                            <img src="./image/footer/mail.png" alt="mail">
+                        </div>
+
+                        <p class="m-0">arni.education@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="content-left">
+                    <a href="#" class="footer-button d-flex align-items-center justify-content-center">Замовити дзвінок</a>
+                    <div class="mb-3">
+                        <img src="./image/footer/icon1.png" alt="icon1" class="mr-3">
+                        <img src="./image/footer/icon2.png" alt="icon2">
+                    </div>
+                    <p class="m-0">Отримуйте акції і бонуси, підписавшись на наші соцмережі</p>
+                </div>
+                
+                <div class="content-right">
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="circle d-flex align-items-center justify-content-center">
+                            <img src="./image/footer/phone.png" alt="phone">
+                        </div>
+
+                        <p class="m-0">+380990500796 Анастасія</p>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="circle d-flex align-items-center justify-content-center">
+                            <img src="./image/footer/mail.png" alt="mail">
+                        </div>
+
+                        <p class="m-0">arni.education@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/g/bxslider@4.2.12(jquery.bxslider.min.js+vendor/jquery.fitvids.js)"></script>
+	<script src="./plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

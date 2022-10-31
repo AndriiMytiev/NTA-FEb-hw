@@ -5,6 +5,10 @@
     margin-bottom: -30px;
 }
 
+.header a:hover {
+    text-decoration: none;
+}
+
 .header .container-wrapper {
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
@@ -139,6 +143,7 @@
     display: none;
     position: absolute;
     right: 100px;
+    top: 35px;
     font-size: 14px;
     font-family: "MontserratAlternates-SemiBold";
 }
