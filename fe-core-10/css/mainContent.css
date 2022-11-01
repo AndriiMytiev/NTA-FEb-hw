@@ -497,8 +497,7 @@ body {
 }
 
 .feedback .feedback-row input {
-    max-width: 345px;
-    width: 90%;
+    width: 345px;
     height: 55px;
     padding: 0 20px;
     outline: none;
@@ -535,8 +534,7 @@ body {
 }
 
 .feedback .feedback-button {
-    max-width: 345px;
-    width: 90%;
+    width: 345px;
     height: 45px;
     color: #000000;
     background: #DCAD55;

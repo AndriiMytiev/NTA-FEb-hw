@@ -330,6 +330,12 @@
         text-align: left;
     }  
 
+    .feedback .feedback-button, 
+    .feedback .feedback-row input {
+        max-width: 345px !important;
+        width: 90% !important;
+    }
+    
     .footer {
         background: transparent;
         padding-top: 0;
@@ -559,6 +565,12 @@
     .reviews .reviews-button div:hover,
     .feedback .feedback-row div:first-child .feedback-button:hover {
         border: transparent;
+    }
+
+    .feedback .feedback-button, 
+    .feedback .feedback-row input {
+        max-width: 345px !important;
+        width: 90% !important;
     }
 
     .footer {
