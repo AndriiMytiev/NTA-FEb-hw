@@ -282,7 +282,6 @@
     }
 
     .reviews .section-title .text-center {
-        /* width: 90%; */
         margin: auto;
         width: 80%;
         padding-right: 20px;
@@ -292,15 +291,7 @@
         text-align: left;
 
     }
-
-    .reviews .card-text {
-        /* height: ; */
-    }
     
-    /* .reviews .slide {
-        padding: 
-    } */
-
     .reviews .bx-wrapper {
         margin-top: 50px;
         padding: 0 25px;
