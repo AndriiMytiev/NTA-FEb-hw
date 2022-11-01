@@ -359,6 +359,10 @@ body {
     text-align: center;
 }
 
+.buy-courses .button-text.secondary {
+    padding: 0;
+}
+
 .buy-courses .button-price {
     color: #000000;
     font-size: 16px;
