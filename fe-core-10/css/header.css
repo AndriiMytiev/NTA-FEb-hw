@@ -48,7 +48,7 @@
     transition: 0.3s;
 }
 
-.header-middle img {
+.header-middle.media-main img {
     width: 110%;
     margin-left: -20px;
 }
@@ -137,6 +137,20 @@
 
 .header-middle.media-tablet img {
     width: 130%;
+}
+
+.header-middle.media-mobile {
+    display: none;
+}
+
+.header-middle.media-mobile img {
+    width: 100%;
+}
+
+.header-middle.media-mobile .familygroup .family-left, 
+.header-middle.media-mobile .familygroup .family-right {
+    position: absolute;
+    bottom: 0;
 }
 
 .new-navbar .media-nav {

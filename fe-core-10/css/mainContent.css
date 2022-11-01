@@ -65,7 +65,7 @@ body {
 }
 
 .infoBlock-table .column-element {
-    width: 300px;
+    max-width: 300px;
     min-height: 115px;
     max-height: fit-content;
     border: 3px solid rgba(220, 173, 85, 1);
@@ -141,6 +141,7 @@ body {
 .courses .card-element {
     background-color: #ffffff;
     height: fit-content;
+    width: fit-content;
 }
 
 .courses .element-title {
@@ -346,7 +347,8 @@ body {
 
 .buy-courses .button {
     position: relative;
-    width: 324px;
+    max-width: 324px;
+    width: 90%;
     border: 4px solid #DCAD55;
 }
 
@@ -448,6 +450,7 @@ body {
 .reviews .reviews-button div {
     background: rgba(220, 173, 85, 1);
     max-width: 360px;
+    width: 90%;
     height: 45px;
     color: #000000;
     font-size: 16px;
@@ -490,7 +493,8 @@ body {
 }
 
 .feedback .feedback-row input {
-    width: 345px;
+    max-width: 345px;
+    width: 90%;
     height: 55px;
     padding: 0 20px;
     outline: none;
@@ -527,7 +531,8 @@ body {
 }
 
 .feedback .feedback-button {
-    width: 345px;
+    max-width: 345px;
+    width: 90%;
     height: 45px;
     color: #000000;
     background: #DCAD55;
@@ -568,6 +573,10 @@ body {
 }
 
 .infoBlock-table.media-tablet {
+    display: none !important;
+}
+
+.infoBlock-table.media-mobile {
     display: none !important;
 }
 
