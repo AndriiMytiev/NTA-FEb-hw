@@ -51,6 +51,8 @@
 .header-middle.media-main img {
     width: 110%;
     margin-left: -20px;
+    position: relative;
+    bottom: -43px
 }
 
 .discount {
