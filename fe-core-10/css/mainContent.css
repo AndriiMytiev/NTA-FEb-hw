@@ -73,6 +73,10 @@ body {
     margin-bottom: 22px;
 }
 
+.infoBlock-table .column-element img {
+    padding-right: 15px;
+}
+
 .infoBlock-table .element-text {
     width: 180px;
     margin-left: auto;
