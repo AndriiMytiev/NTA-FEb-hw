@@ -385,7 +385,7 @@
     }
 }
 
-@media (min-width: 427px) and (max-width: 768px) {
+@media (min-width: 427px) and (max-width: 1024px) {
     .header-middle.media-main {
         display: none;
     }
