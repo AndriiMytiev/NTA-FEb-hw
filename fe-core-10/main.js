@@ -1,3 +1,7 @@
+window.onload = function () {
+    $('#preloader').addClass('hide');
+};
+
 $(document).ready(function() {
     $('.new-navbar-nav a').on('click', function() {
 
@@ -42,18 +46,12 @@ $(document).ready(function() {
     });
 });
 
-window.onload = function () {
-    $('#preloader').addClass('hide');
-};
-
 window.addEventListener('scroll', () => {
-    console.log(window.scrollY);
-
-    window.scrollY > document.documentElement.offsetHeight-500 
-        ? $('.button-scroll-wrapper').removeClass('hide') 
-        : $('.button-scroll-wrapper').addClass('hide');
+    console.log(scrollY);
+    if(window.scrollY > document.documentElement.offsetHeight-700) {
+        $('.button-scroll-wrapper').removeClass('hide') 
+    } else $('.button-scroll-wrapper').addClass('hide');
 });
-
 
 $('.button-scroll').on('click', ()=>{
     window.scrollTo({
