@@ -47,6 +47,7 @@ $(document).ready(function() {
 });
 
 window.addEventListener('scroll', () => {
+    console.log(document.documentElement.offsetHeight);
     console.log(scrollY);
     if(window.scrollY > document.documentElement.offsetHeight-800) {
         $('.button-scroll-wrapper').removeClass('hide') 
