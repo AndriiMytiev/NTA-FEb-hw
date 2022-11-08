@@ -49,7 +49,7 @@ $(document).ready(function() {
 window.addEventListener('scroll', () => {
     const siteHeight = document.documentElement.offsetHeight;
     if(window.scrollY > siteHeight-(siteHeight*0.1)) {
-        $('.button-scroll-wrapper').removeClass('hide') 
+        $('.button-scroll-wrapper').removeClass('hide');
     } else $('.button-scroll-wrapper').addClass('hide');
 });
 
