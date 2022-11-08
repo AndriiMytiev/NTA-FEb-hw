@@ -48,3 +48,97 @@
     padding-left: 30px;
     font-size: 16px;
 }
+
+.button-scroll-wrapper {
+    position: fixed;
+    background-color: rgba(220, 173, 85, 0.6);
+    right: 50px;
+    bottom: 25px;
+    z-index: 10;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+.button-scroll-wrapper:hover {
+    background-color: rgba(220, 173, 85, 1);
+    transition: 0.3s;
+}
+
+.button-scroll-wrapper:hover .button-scroll {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.button-scroll-wrapper:hover .add-circle-before {
+    background-color: rgba(220, 173, 85, 0.5);
+    transition: 0.3s;
+}
+
+.button-scroll-wrapper:hover .add-circle-after {
+    background-color: rgba(220, 173, 85, 0.4);
+    transition: 0.3s;
+} 
+
+.button-scroll {
+    z-index: 1;
+}
+  
+.button-scroll-wrapper.hide {
+    display: none;
+}
+
+.add-circle-before, 
+.add-circle-after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.button-scroll-wrapper .add-circle-before {
+    animation: before 3s infinite ease;
+    background-color: rgba(220, 173, 85, 0.3);
+}
+
+.button-scroll-wrapper .add-circle-after {
+    animation: after 3s infinite ease;
+    background-color: rgba(220, 173, 85, 0.2);
+} 
+
+@keyframes before {
+    from {
+        width: 50px;
+        height: 50px;
+    }
+    50% {
+        width: 60px;
+        height: 60px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@keyframes after{
+    from {
+        width: 50px;
+        height: 50px;
+    }
+    50% {
+        width: 70px;
+        height: 70px;
+    }
+    to {
+        width: 50px;
+        height: 50px;
+    }
+}

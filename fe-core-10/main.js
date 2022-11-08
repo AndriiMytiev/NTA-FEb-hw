@@ -1,5 +1,19 @@
 $(document).ready(function() {
-    $('body').on('click', '.tab-nav a', function(){
+    $('.new-navbar-nav a').on('click', function() {
+
+        let href = $(this).attr('href');
+    
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, {
+            duration: 350,  
+            easing: "linear"
+        });
+    
+        return false;
+    });
+    
+    $('.tab-nav a').on('click', function(){
         $('.tab-nav a').removeClass('active');
         $(this).addClass('active');
 
@@ -29,6 +43,22 @@ $(document).ready(function() {
 });
 
 window.onload = function () {
-    let preloader = document.getElementById('preloader');
-    preloader.classList.add('hide');
-}
+    $('#preloader').addClass('hide');
+};
+
+window.addEventListener('scroll', () => {
+    window.scrollY > document.documentElement.offsetHeight-500 
+    ? $('.button-scroll-wrapper').removeClass('hide') 
+    : $('.button-scroll-wrapper').addClass('hide');
+  });
+
+
+$('.button-scroll').on('click', ()=>{
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+})
+
+
