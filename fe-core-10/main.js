@@ -6,8 +6,8 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $(href).offset().top
         }, {
-            duration: 350,  
-            easing: "linear"
+            duration: 350,   
+            easing: "linear" 
         });
     
         return false;
@@ -47,10 +47,12 @@ window.onload = function () {
 };
 
 window.addEventListener('scroll', () => {
+    console.log(window.scrollY);
+
     window.scrollY > document.documentElement.offsetHeight-500 
-    ? $('.button-scroll-wrapper').removeClass('hide') 
-    : $('.button-scroll-wrapper').addClass('hide');
-  });
+        ? $('.button-scroll-wrapper').removeClass('hide') 
+        : $('.button-scroll-wrapper').addClass('hide');
+});
 
 
 $('.button-scroll').on('click', ()=>{
