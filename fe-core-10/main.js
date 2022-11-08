@@ -47,9 +47,8 @@ $(document).ready(function() {
 });
 
 window.addEventListener('scroll', () => {
-    console.log(document.documentElement.offsetHeight);
-    console.log(scrollY);
-    if(window.scrollY > document.documentElement.offsetHeight-800) {
+    const siteHeight = document.documentElement.offsetHeight;
+    if(window.scrollY > siteHeight-(siteHeight*0.1)) {
         $('.button-scroll-wrapper').removeClass('hide') 
     } else $('.button-scroll-wrapper').addClass('hide');
 });
