@@ -391,6 +391,12 @@
     }
 }
 
+@media (min-width: 427px) and (max-width: 768px) {
+    .new-navbar .media-nav {
+        display: block;
+    }
+}
+
 @media (min-width: 427px) and (max-width: 1024px) {
     .header-middle.media-main {
         display: none;
@@ -398,10 +404,6 @@
 
     .header-middle.media-tablet {
         display: flex;
-    }
-
-    .new-navbar .media-nav {
-        display: block;
     }
 
     .discount.media-main {
