@@ -62,7 +62,7 @@ window.addEventListener('scroll', () => {
     } else $('.button-scroll-wrapper').addClass('hide');
 });
 
-$('.button-scroll').on('click', ()=>{
+$('.button-scroll-wrapper').on('click', ()=>{
     window.scrollTo({
         top: 0,
         left: 0,
