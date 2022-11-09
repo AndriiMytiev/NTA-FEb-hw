@@ -46,22 +46,16 @@ $(document).ready(function() {
     });
 
     $('.teacher-slider').bxSlider({
-        // mode: 'vertical',
         auto: true,
         controls: false,
-        // responsive: true,
         speed: 1000,
         pager: false,
-        // mimSlides: 1,
-        // maxSlides: 5,
-        // moveSlides: 1,
         slideWidth: 330
     });
 });
 
 window.addEventListener('scroll', () => {
-    const siteHeight = document.documentElement.offsetHeight;
-    if(window.scrollY > siteHeight-(siteHeight*0.1)) {
+    if(window.scrollY > document.documentElement.offsetHeight*0.9) {
         $('.button-scroll-wrapper').removeClass('hide');
     } else $('.button-scroll-wrapper').addClass('hide');
 });
