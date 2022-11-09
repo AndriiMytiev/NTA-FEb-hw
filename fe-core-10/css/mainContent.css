@@ -201,10 +201,22 @@ body {
     padding-top: 120px;
 }
 
+.teachers .bx-wrapper {
+    background: transparent!important;
+	border: 0 !important;
+	box-shadow: none!important;
+    margin: 0 !important;
+}
+
+.teachers .slide {
+    padding-top: 17px;
+}
+
 .teacher-card {
     background-color: #ffffff;
     padding: 5px;
     position: relative;
+    width: fit-content;
 }
 
 .teacher-card::before {

@@ -44,6 +44,19 @@ $(document).ready(function() {
         moveSlides: 1,
         slideWidth: 366
     });
+
+    $('.teacher-slider').bxSlider({
+        // mode: 'vertical',
+        auto: true,
+        controls: false,
+        // responsive: true,
+        speed: 1000,
+        pager: false,
+        // mimSlides: 1,
+        // maxSlides: 5,
+        // moveSlides: 1,
+        slideWidth: 330
+    });
 });
 
 window.addEventListener('scroll', () => {
