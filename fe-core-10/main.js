@@ -68,6 +68,4 @@ $('.button-scroll-wrapper').on('click', ()=>{
         left: 0,
         behavior: 'smooth'
     });
-})
-
-
+});
