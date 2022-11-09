@@ -46,11 +46,13 @@ $(document).ready(function() {
     });
 
     $('.teacher-slider').bxSlider({
+        mode: 'vertical',
         auto: true,
         controls: false,
         speed: 1000,
         pager: false,
-        slideWidth: 330
+        responsive: true,
+        slideMargin: 50
     });
 });
 
